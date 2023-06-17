@@ -150,66 +150,7 @@ const config = {
     [
       "@docusaurus/plugin-client-redirects",
       {
-        redirects: [
-          {
-            to: "/0.2/getting-started/install/linux",
-            from: [
-              "/zh/install",
-              "/install",
-              "/zh/install/index",
-              "/install/index",
-              "/zh/install/linux",
-              "/install/linux",
-            ],
-          },
-          {
-            to: "/getting-started/install/docker",
-            from: ["/zh/install/docker", "/install/docker"],
-          },
-          {
-            to: "/0.2/getting-started/upgrade",
-            from: ["/zh/install/upgrade", "/install/upgrade"],
-          },
-          {
-            to: "/getting-started/downloads",
-            from: ["/zh/install/downloads", "/install/downloads"],
-          },
-          {
-            to: "/user-guide/markdown",
-            from: ["/zh/user-guide/markdown"],
-          },
-          {
-            to: "/contribution/issue",
-            from: ["/zh/contribution/issue"],
-          },
-          {
-            to: "/contribution/pr",
-            from: ["/zh/contribution/pr"],
-          },
-        ],
-        createRedirects(existingPath) {
-          if (existingPath.startsWith("/0.2/")) {
-            return [
-              existingPath.replace("/0.2/", "/0.2.4/"),
-              existingPath.replace("/0.2/", "/0.2.3/"),
-              existingPath.replace("/0.2/", "/0.2.2/"),
-              existingPath.replace("/0.2/", "/0.2.1/"),
-              existingPath.replace("/0.2/", "/0.2.0/"),
-            ];
-          }
-          if (existingPath.startsWith("/0.3.0-SNAPSHOT/")) {
-            return [
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.0.0-SNAPSHOT/"),
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.1.0-SNAPSHOT/"),
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.2.0-SNAPSHOT/"),
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.3.0-SNAPSHOT/"),
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.4.0-SNAPSHOT/"),
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.5.0-SNAPSHOT/"),
-              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.6.0-SNAPSHOT/"),
-            ];
-          }
-          return undefined;
-        },
+        redirects: [],
       },
     ],
   ],

@@ -43,7 +43,7 @@ docker run \
   --ikaros.security.initializer.master-password=tomoki
 ```
 
-以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose>
+<!-- 以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose> -->
 
 ## 许可证
 

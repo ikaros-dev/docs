@@ -38,7 +38,7 @@ docker run \
   --name ikaros \
   -p 9999:9999 \
   -v ~/.ikaros:/root/.ikaros \
-  ikarosrun/ikaros:0.2.0 \
+  ikarosrun/ikaros:v0.2.0 \
   --ikaros.security.initializer.master-username=tomoki \
   --ikaros.security.initializer.master-password=tomoki
 ```

@@ -1,0 +1,6 @@
+{
+  "version.label": {
+    "message": "0.3.0-SNAPSHOT",
+    "description": "The label for version current"
+  }
+}

@@ -13,6 +13,10 @@ const config = {
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  i18n: {
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
+  },
   organizationName: "ikaros-dev", // Usually your GitHub org/user name.
   projectName: "ikaros", // Usually your repo name.
 
@@ -119,7 +123,7 @@ const config = {
             items: [
               {
                 label: "微信公众号",
-                href: "/img/wechat.png",
+                href: "https://ikaros.run/wechat.png",
               },
               {
                 label: "GitHub Issues",

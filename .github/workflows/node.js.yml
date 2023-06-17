@@ -59,4 +59,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
-          TARGET: "/home/nginxWebUI/www/docs.ikaros.run"
+          TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run"

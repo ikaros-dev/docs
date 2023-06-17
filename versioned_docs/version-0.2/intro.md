@@ -53,9 +53,7 @@ ikaros 使用 GPL-v3.0 协议开源，请遵守开源协议。
 
 ## 贡献
 
-参考 [CONTRIBUTING](https://github.com/ikaros-dev/ikaros/blob/master/CONTRIBUTING.md)。
-
-<a href="https://github.com/ikaros-dev/ikaros/graphs/contributors"><img src="https://opencollective.com/ikaros/contributors.svg?width=890&button=false" /></a>
+参考 [CONTRIBUTING](https://github.com/ikaros-dev/ikaros/blob/master/CONTRIBUTING.MD)。
 
 ## 状态
 

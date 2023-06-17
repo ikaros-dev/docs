@@ -44,7 +44,7 @@ function Version(): JSX.Element {
       description="Docusaurus 2 Versions page listing all documented site versions"
     >
       <main className="container margin-vert--lg">
-        <h1>Halo documentation versions</h1>
+        <h1>Ikaros documentation versions</h1>
 
         {latestVersion && (
           <div className="margin-bottom--lg">
@@ -60,7 +60,7 @@ function Version(): JSX.Element {
                     <Link to={latestVersion.path}>Documentation</Link>
                   </td>
                   <td>
-                    <a href={`${repoUrl}/releases/tag/v${latestVersion.name}`}>
+                    <a href={`${repoUrl}/releases/tag/v${latestVersion.name}.0`}>
                       Release Notes
                     </a>
                   </td>
@@ -90,7 +90,7 @@ function Version(): JSX.Element {
           </div>
         )}
 
-        {(pastVersions.length > 0 || VersionsArchivedList.length > 0) && (
+        {(pastVersions.length > 0 || VersionsArchived.length > 0) && (
           <div className="margin-bottom--lg">
             <h3 id="archive">Past versions (Not maintained anymore)</h3>
             <p>

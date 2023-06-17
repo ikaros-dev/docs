@@ -13,10 +13,6 @@ const config = {
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  i18n: {
-    defaultLocale: "zh-Hans",
-    locales: ["zh-Hans"],
-  },
   organizationName: "ikaros-dev", // Usually your GitHub org/user name.
   projectName: "ikaros", // Usually your repo name.
 
@@ -25,7 +21,7 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        dogitcs: {
+        docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl: "https://github.com/ikaros-dev/docs/edit/master/",
@@ -34,11 +30,11 @@ const config = {
           showLastUpdateAuthor: true,
           remarkPlugins: [math, mermaid],
           rehypePlugins: [katex],
-          lastVersion: "0.1",
+          lastVersion: "0.2",
           versions: {
             current: {
-              label: "0.2.0-SNAPSHOT",
-              path: "0.2.0-SNAPSHOT",
+              label: "0.3.0-SNAPSHOT",
+              path: "0.3.0-SNAPSHOT",
             },
           },
         },
@@ -51,6 +47,7 @@ const config = {
           priority: 0.5,
           ignorePatterns: [
             "/0.1/**",
+            "/0.2/**",
           ],
         },
       }),
@@ -187,24 +184,24 @@ const config = {
           },
         ],
         createRedirects(existingPath) {
-          if (existingPath.startsWith("/0.1/")) {
+          if (existingPath.startsWith("/0.2/")) {
             return [
-              existingPath.replace("/0.1/", "/0.1.4/"),
-              existingPath.replace("/0.1/", "/0.1.3/"),
-              existingPath.replace("/0.1/", "/0.1.2/"),
-              existingPath.replace("/0.1/", "/0.1.1/"),
-              existingPath.replace("/0.1/", "/0.1.0/"),
+              existingPath.replace("/0.2/", "/0.2.4/"),
+              existingPath.replace("/0.2/", "/0.2.3/"),
+              existingPath.replace("/0.2/", "/0.2.2/"),
+              existingPath.replace("/0.2/", "/0.2.1/"),
+              existingPath.replace("/0.2/", "/0.2.0/"),
             ];
           }
-          if (existingPath.startsWith("/0.2.0-SNAPSHOT/")) {
+          if (existingPath.startsWith("/0.3.0-SNAPSHOT/")) {
             return [
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.0.0-SNAPSHOT/"),
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.1.0-SNAPSHOT/"),
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.2.0-SNAPSHOT/"),
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.3.0-SNAPSHOT/"),
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.4.0-SNAPSHOT/"),
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.5.0-SNAPSHOT/"),
-              existingPath.replace("/0.2.0-SNAPSHOT/", "/0.6.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.0.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.1.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.2.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.3.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.4.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.5.0-SNAPSHOT/"),
+              existingPath.replace("/0.3.0-SNAPSHOT/", "/0.6.0-SNAPSHOT/"),
             ];
           }
           return undefined;

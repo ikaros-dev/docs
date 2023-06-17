@@ -39,8 +39,8 @@ docker run \
   -p 9999:9999 \
   -v ~/.ikaros:/root/.ikaros \
   ikarosrun/ikaros:0.2.0 \
-  --ikaros.security.initializer.superadminusername=tomoki \
-  --ikaros.security.initializer.superadminpassword=tomoki
+  --ikaros.security.initializer.master-username=tomoki \
+  --ikaros.security.initializer.master-password=tomoki
 ```
 
 以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose>

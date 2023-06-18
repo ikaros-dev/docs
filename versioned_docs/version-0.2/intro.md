@@ -45,6 +45,18 @@ docker run \
 
 <!-- 以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose> -->
 
+## 在线体验
+> 注意：请不要修改密码，删除已有的文件和插件。
+
+- 环境地址(无法访问)：https://demo.ikaros.run
+
+- 后台地址：https://demo.ikaros.run/console
+
+- 用户名：tomoki
+
+- 密码：tomoki
+
+
 ## 许可证
 
 [![license](https://img.shields.io/github/license/ikaros-dev/ikaros.svg?style=flat-square)](https://github.com/ikaros-dev/ikaros/blob/master/LICENSE)

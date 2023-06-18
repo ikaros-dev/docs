@@ -53,6 +53,8 @@ docker run \
 
 - 后台地址：<https://demo.ikaros.run/console>
 
+- API文档：<https://demo.ikaros.run/webjars/swagger-ui/index.html>
+
 - 用户名：tomoki
 
 - 密码：tomoki

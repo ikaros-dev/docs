@@ -50,13 +50,9 @@ docker run \
 > 注意：请不要修改密码，删除已有的文件和插件，更不要上传大视频文件。
 
 - 环境地址(无法访问)：<https://demo.ikaros.run>
-
 - 后台地址：<https://demo.ikaros.run/console>
-
 - API文档：<https://demo.ikaros.run/webjars/swagger-ui/index.html>
-
 - 用户名：tomoki
-
 - 密码：tomoki
 
 ## 简要帮助

@@ -43,6 +43,11 @@ docker run \
   --ikaros.security.initializer.master-password=tomoki
 ```
 
+由于主页没做页面，访问`/`的正常情况是白屏，
+请访问控制台，控制台的路径是 `/console` 。
+默认端口是`9999`，默认用户名密码是通过上述两个参数控制的，
+如没有用这两个参数启动，则默认的用户名是 `tomoki`，密码在打印在日志里(只有首次运行会打印密码)。
+
 <!-- 以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose> -->
 
 ## 在线体验

@@ -116,6 +116,14 @@ const config = {
                 label: "GitHub 组织",
                 href: "https://github.com/ikaros-dev",
               },
+              {
+                label: "Docs Access Analysis",
+                href: "https://analytics.ikaros.run/share/HpFEzaaekV9NOCZn/ikaros%20docs",
+              },
+              {
+                label: "Server Status",
+                href: "https://status.ikaros.run/status/ikaros",
+              },
             ],
           },
           {

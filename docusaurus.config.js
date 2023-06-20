@@ -154,6 +154,14 @@ const config = {
       },
     ],
   ],
+  scripts: [
+    {
+      src: "https://analytics.ikaros.run/script.js",
+      async: true,
+      defer: true,
+      "data-website-id": "3266d477-7c25-4d81-9787-15390a98c4d3",
+    },
+  ],
 };
 
 module.exports = config;

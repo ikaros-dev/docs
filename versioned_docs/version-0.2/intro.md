@@ -50,17 +50,6 @@ docker run \
 
 <!-- 以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose> -->
 
-## 在线体验
-
-:::tip
-请不要修改密码，删除已有的文件和插件，更不要上传大视频文件。
-:::
-
-- 环境地址(无法访问)：<https://demo.ikaros.run>
-- 后台地址：<https://demo.ikaros.run/console>
-- API文档：<https://demo.ikaros.run/webjars/swagger-ui/index.html>
-- 用户名：tomoki
-- 密码：tomoki
 
 ## 简要帮助
 

@@ -59,7 +59,7 @@ docker run \
 
 [![license](https://img.shields.io/github/license/ikaros-dev/ikaros.svg?style=flat-square)](https://github.com/ikaros-dev/ikaros/blob/master/LICENSE)
 
-ikaros 使用 GPL-v3.0 协议开源，请遵守开源协议。
+ikaros 使用 AGPL-v3.0 协议开源，请遵守开源协议。
 
 ## 贡献
 

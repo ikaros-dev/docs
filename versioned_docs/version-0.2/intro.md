@@ -47,6 +47,8 @@ docker run \
 默认端口是`9999`，默认用户名密码是通过上述两个参数控制的，
 如没有用这两个参数启动，则默认的用户名是 `tomoki`，密码在打印在日志里(只有首次运行会打印密码)。
 
+以上仅作为体验使用，详细部署文档请查阅：<https://docs.ikaros.run/getting-started/install/docker-compose>
+
 ## 插件
 
 插件汇总在这个仓库：<https://github.com/ikaros-dev/awesome>

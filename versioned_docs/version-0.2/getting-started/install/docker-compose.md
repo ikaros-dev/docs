@@ -47,10 +47,6 @@ import DockerArgs from "./slots/docker-args.md"
 
   此文档提供两种场景的 Docker Compose 配置文件，请根据你的需要**选择一种**。
 
-  :::info
-  需要注意的是，此文档为了更加方便的管理配置，所有与 Halo 相关的配置都使用 Docker 容器启动参数代替，所以无需创建 application.yaml 文件。
-  :::
-
     1. 创建 Ikaros + PostgreSQL 的实例：
 
     ```yaml {24-34,51} title="~/ikaros/docker-compose.yaml"

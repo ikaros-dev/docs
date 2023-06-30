@@ -34,11 +34,11 @@ const config = {
           showLastUpdateAuthor: true,
           remarkPlugins: [math, mermaid],
           rehypePlugins: [katex],
-          lastVersion: "0.2",
+          lastVersion: "0.3",
           versions: {
             current: {
-              label: "0.3.0-SNAPSHOT",
-              path: "0.3.0-SNAPSHOT",
+              label: "0.4.0-SNAPSHOT",
+              path: "0.4.0-SNAPSHOT",
             },
           },
         },
@@ -52,6 +52,7 @@ const config = {
           ignorePatterns: [
             "/0.1/**",
             "/0.2/**",
+            "/0.3/**",
           ],
         },
       }),
@@ -69,7 +70,7 @@ const config = {
       navbar: {
         title: "Ikaros 文档",
         logo: {
-          alt: "Halo Logo",
+          alt: "Ikaros Logo",
           src: "/img/favicon.ico",
         },
         items: [

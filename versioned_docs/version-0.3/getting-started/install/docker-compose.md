@@ -55,53 +55,47 @@ import DockerArgs from "./slots/docker-args.md"
     services:
 
          # ikaros
-        ikaros_server:
+        ikaros:
             image: ikarosrun/ikaros:v0.3.0
-            container_name: ikaros_server
+            container_name: ikaros
             restart: on-failure:3
             depends_on:
-            ikaros_database:
+              ikaros_database:
                 condition: service_healthy
             networks:
-            ikaros_networks:
+              ikaros_networks:
             volumes:
-            - ./:/root/.ikaros
+              - ./:/root/.ikaros
             ports:
-            - "9999:9999"
+              - "9999:9999"
             healthcheck:
-            test:
-                [
-                "CMD",
-                "curl",
-                "-f",
-                "http://localhost:9999/actuator/health"
-                ]
-            interval: 30s
-            timeout: 5s
-            retries: 5
-            start_period: 30s
+              test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health"]
+              interval: 30s
+              timeout: 5s
+              retries: 5
+              start_period: 30s
             environment:
-            # 避免中日文文件名称乱码，需要设置文件编码，先通过命令 [locale -a] 查询下宿主机编码，有的是 [C] 有的是 [zh_CN]，替换下方对应的字符
-            - LANG=C.UTF-8
-            - LANGUAGE=C:zh
-            - LC_ALL=C.UTF-8
-            - TZ=Asia/Shanghai
+              # 避免中日文文件名称乱码，需要设置文件编码，先通过命令 [locale -a] 查询下宿主机编码，有的是 [C] 有的是 [zh_CN]，替换下方对应的字符
+              - LANG=C.UTF-8
+              - LANGUAGE=C:zh
+              - LC_ALL=C.UTF-8
+              - TZ=Asia/Shanghai
             command:
-            - --logging.charset.console=UTF-8
-            - --logging.charset.file=UTF-8
-            - --logging.level.run.ikaros.server=DEBUG
-            - --logging.level.run.ikaros.plugin=DEBUG
-            - --logging.level.run.ikaros.jellyfin=DEBUG
-            - --sun.jnu.encoding=UTF-8
-            - --spring.r2dbc.url=r2dbc:pool:postgresql://ikaros_database/ikaros
-            - --spring.r2dbc.username=ikaros
-            # PostgreSQL 的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致。
-            - --spring.r2dbc.password=openpostgresql
-            - --spring.sql.init.platform=postgresql
-            # 初始化的超级管理员用户名
-            - --ikaros.security.initializer.master-username=tomoki
-            # 初始化的超级管理员密码
-            - --ikaros.security.initializer.master-password=tomoki
+              - --logging.charset.console=UTF-8
+              - --logging.charset.file=UTF-8
+              - --logging.level.run.ikaros.server=INFO
+              - --logging.level.run.ikaros.plugin=INFO
+              - --logging.level.run.ikaros.jellyfin=INFO
+              - --sun.jnu.encoding=UTF-8
+              - --spring.r2dbc.url=r2dbc:pool:postgresql://ikaros_database/ikaros
+              - --spring.r2dbc.username=ikaros
+              # PostgreSQL 的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致。
+              - --spring.r2dbc.password=openpostgresql
+              - --spring.sql.init.platform=postgresql
+              # 初始化的超级管理员用户名
+              - --ikaros.security.initializer.master-username=tomoki
+              # 初始化的超级管理员密码
+              - --ikaros.security.initializer.master-password=tomoki
 
         # ikaros database
         ikaros_database:
@@ -109,21 +103,21 @@ import DockerArgs from "./slots/docker-args.md"
             container_name: ikaros_database
             restart: on-failure:3
             networks:
-            ikaros_networks:
+              ikaros_networks:
             volumes:
-            - ./database:/var/lib/postgresql/data
+              - ./database:/var/lib/postgresql/data
             healthcheck:
-            test: [ "CMD", "pg_isready" ]
-            interval: 10s
-            timeout: 5s
-            retries: 5
+              test: [ "CMD", "pg_isready" ]
+              interval: 10s
+              timeout: 5s
+              retries: 5
             environment:
-            - POSTGRES_DB=ikaros
-            - POSTGRES_USER=ikaros
-            - POSTGRES_PASSWORD=openpostgresql
+              - POSTGRES_DB=ikaros
+              - POSTGRES_USER=ikaros
+              - POSTGRES_PASSWORD=openpostgresql
 
     networks:
-    ikaros_networks:
+      ikaros_networks:
         driver: bridge
     ```
 
@@ -133,51 +127,45 @@ import DockerArgs from "./slots/docker-args.md"
     version: "3"
     services:
        # ikaros
-      ikaros_server:
+      ikaros:
           image: ikarosrun/ikaros:v0.3.0
-          container_name: ikaros_server
+          container_name: ikaros
           restart: on-failure:3
           depends_on:
-          ikaros_database:
+            ikaros_database:
               condition: service_healthy
           networks:
-          ikaros_networks:
+            ikaros_networks:
           volumes:
-          - ./:/root/.ikaros
+            - ./:/root/.ikaros
           ports:
-          - "9999:9999"
+            - "9999:9999"
           healthcheck:
-          test:
-              [
-              "CMD",
-              "curl",
-              "-f",
-              "http://localhost:9999/actuator/health"
-              ]
-          interval: 30s
-          timeout: 5s
-          retries: 5
-          start_period: 30s
+            test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health"]
+            interval: 30s
+            timeout: 5s
+            retries: 5
+            start_period: 30s
           environment:
-          # 避免中日文文件名称乱码，需要设置文件编码，先通过命令 [locale -a] 查询下宿主机编码，有的是 [C] 有的是 [zh_CN]，替换下方对应的字符
-          - LANG=C.UTF-8
-          - LANGUAGE=C:zh
-          - LC_ALL=C.UTF-8
-          - TZ=Asia/Shanghai
+            # 避免中日文文件名称乱码，需要设置文件编码，先通过命令 [locale -a] 查询下宿主机编码，有的是 [C] 有的是 [zh_CN]，替换下方对应的字符
+            - LANG=C.UTF-8
+            - LANGUAGE=C:zh
+            - LC_ALL=C.UTF-8
+            - TZ=Asia/Shanghai
           command:
-          - --logging.charset.console=UTF-8
-          - --logging.charset.file=UTF-8
-          - --logging.level.run.ikaros.server=DEBUG
-          - --logging.level.run.ikaros.plugin=DEBUG
-          - --logging.level.run.ikaros.jellyfin=DEBUG
-          - --sun.jnu.encoding=UTF-8
-          # 初始化的超级管理员用户名
-          - --ikaros.security.initializer.master-username=tomoki
-          # 初始化的超级管理员密码
-          - --ikaros.security.initializer.master-password=tomoki
+            - --logging.charset.console=UTF-8
+            - --logging.charset.file=UTF-8
+            - --logging.level.run.ikaros.server=INFO
+            - --logging.level.run.ikaros.plugin=INFO
+            - --logging.level.run.ikaros.jellyfin=INFO
+            - --sun.jnu.encoding=UTF-8
+            # 初始化的超级管理员用户名
+            - --ikaros.security.initializer.master-username=tomoki
+            # 初始化的超级管理员密码
+            - --ikaros.security.initializer.master-password=tomoki
 
     networks:
-    ikaros_networks:
+      ikaros_networks:
         driver: bridge
     ```
 

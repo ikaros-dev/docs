@@ -108,7 +108,7 @@ function Version(): JSX.Element {
                       </Link>
                     </td>
                     <td>
-                      <a href={`${repoUrl}/releases/tag/v${version.name}`}>
+                      <a href={`${repoUrl}/releases/tag/v${version.name}.0`}>
                         <ReleaseNotesLabel />
                       </a>
                     </td>

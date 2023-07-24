@@ -30,12 +30,12 @@ import DockerArgs from "./slots/docker-args.md"
 - [ikarosrun/ikaros](https://hub.docker.com/r/ikarosrun/ikaros)
 
 :::info 注意
-目前 Ikaros 并未更新 Docker 的 latest 标签镜像，主要因为 暂未发布正式版本。我们推荐使用固定版本的标签，比如 `ikarosrun/ikaros:v0.5.2` 。
+目前 Ikaros 并未更新 Docker 的 latest 标签镜像，主要因为 暂未发布正式版本。我们推荐使用固定版本的标签，比如 `ikarosrun/ikaros:v0.5.3` 。
 
-- `ikarosrun/ikaros:v0.5.2`：表示最新的可用镜像，每次发布时都会根据GitHub的标签构建一个新的镜像
+- `ikarosrun/ikaros:v0.5.3`：表示最新的可用镜像，每次发布时都会根据GitHub的标签构建一个新的镜像
 - `ikarosrun/ikaros:dev`：表示开发中的镜像，不推荐使用，每次Pull Request合并到主分支都会构建并覆盖该镜像。。
 
-后续文档以 `ikarosrun/ikaros:v0.5.2` 为例。
+后续文档以 `ikarosrun/ikaros:v0.5.3` 为例。
 :::
 
 1. 创建容器
@@ -46,7 +46,7 @@ import DockerArgs from "./slots/docker-args.md"
         --name ikaros \
         -p 9999:9999 \
         -v ~/.ikaros:/root/.ikaros \
-        ikarosrun/ikaros:v0.5.2 \
+        ikarosrun/ikaros:v0.5.3 \
         --ikaros.security.initializer.master-username=tomoki \
         --ikaros.security.initializer.master-password=tomoki
     ```
@@ -73,10 +73,10 @@ import DockerArgs from "./slots/docker-args.md"
 
 ## 升级版本
 
-1. 拉取新版本镜像(请选择最新的标签替换下方的`v0.5.2`)
+1. 拉取新版本镜像(请选择最新的标签替换下方的`v0.5.3`)
 
   ```bash
-  docker pull ikarosrun/ikaros:v0.5.2
+  docker pull ikarosrun/ikaros:v0.5.3
   ```
 
 2. 停止运行中的容器
@@ -104,7 +104,7 @@ import DockerArgs from "./slots/docker-args.md"
         --name ikaros \
         -p 9999:9999 \
         -v ~/.ikaros:/root/.ikaros \
-        ikarosrun/ikaros:v0.5.2 \
+        ikarosrun/ikaros:v0.5.3 \
         --ikaros.security.initializer.master-username=tomoki \
         --ikaros.security.initializer.master-password=tomoki
     ```

@@ -25,12 +25,12 @@ import DockerArgs from "./slots/docker-args.md"
 - [ikarosrun/ikaros](https://hub.docker.com/r/ikarosrun/ikaros)
 
 :::info 注意
-目前 Ikaros 并未更新 Docker 的 latest 标签镜像，主要因为 暂未发布正式版本。我们推荐使用固定版本的标签，比如 `ikarosrun/ikaros:v0.5.0` 。
+目前 Ikaros 并未更新 Docker 的 latest 标签镜像，主要因为 暂未发布正式版本。我们推荐使用固定版本的标签，比如 `ikarosrun/ikaros:v0.5.1` 。
 
-- `ikarosrun/ikaros:v0.5.0`：表示最新的可用镜像，每次发布时都会根据GitHub的标签构建一个新的镜像
+- `ikarosrun/ikaros:v0.5.1`：表示最新的可用镜像，每次发布时都会根据GitHub的标签构建一个新的镜像
 - `ikarosrun/ikaros:dev`：表示开发中的镜像，不推荐使用，每次Pull Request合并到主分支都会构建并覆盖该镜像。。
 
-后续文档以 `ikarosrun/ikaros:v0.5.0` 为例。
+后续文档以 `ikarosrun/ikaros:v0.5.1` 为例。
 :::
 
 1. 在系统任意位置创建一个文件夹，此文档以 `~/ikaros` 为例。
@@ -54,7 +54,7 @@ import DockerArgs from "./slots/docker-args.md"
     services:
         # ikaros
         ikaros:
-            image: ikarosrun/ikaros:v0.5.0
+            image: ikarosrun/ikaros:v0.5.1
             container_name: ikaros
             restart: on-failure:3
             depends_on:
@@ -127,7 +127,7 @@ import DockerArgs from "./slots/docker-args.md"
     services:
        # ikaros
       ikaros:
-          image: ikarosrun/ikaros:v0.5.0
+          image: ikarosrun/ikaros:v0.5.1
           container_name: ikaros
           restart: on-failure:3
           networks:
@@ -210,7 +210,7 @@ import DockerArgs from "./slots/docker-args.md"
   ```yaml {3}
   services:
     ikaros:
-      image: ikarosrun/ikaros:v0.5.0
+      image: ikarosrun/ikaros:v0.5.1
       container_name: ikaros
   ```
 

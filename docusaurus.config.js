@@ -34,11 +34,11 @@ const config = {
           showLastUpdateAuthor: true,
           remarkPlugins: [math, mermaid],
           rehypePlugins: [katex],
-          lastVersion: "0.4",
+          lastVersion: "0.5",
           versions: {
             current: {
-              label: "0.5.0-SNAPSHOT",
-              path: "0.5.0-SNAPSHOT",
+              label: "0.6.0-SNAPSHOT",
+              path: "0.6.0-SNAPSHOT",
             },
           },
         },
@@ -48,12 +48,13 @@ const config = {
         },
         sitemap: {
           changefreq: "weekly",
-          priority: 0.5,
+          priority: 0.6,
           ignorePatterns: [
             "/0.1/**",
             "/0.2/**",
             "/0.3/**",
             "/0.4/**",
+            "/0.5/**",
           ],
         },
       }),

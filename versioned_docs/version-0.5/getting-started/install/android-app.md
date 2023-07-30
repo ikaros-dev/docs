@@ -7,7 +7,7 @@ description: 安卓原生APP
 
 安卓手机的原生APP
 
-GitHub: <https://github.com/ikaros-dev/app>
+GitHub: <https://github.com/ikaros-dev/andapp>
 
 :::tip
 还没配好CI打包

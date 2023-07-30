@@ -41,6 +41,20 @@
           "user-guide/faq"
         ]
       },
+      {
+        "type": "category",
+        "label": "插件",
+        "link": {
+          "type": "generated-index"
+        },
+        "items": [
+          "plugins/common",
+          "plugins/plugin-bgmtv",
+          "plugins/plugin-local-files-import",
+          "plugins/plugin-jellyfin",
+          "plugins/plugin-mikan"
+        ]
+      },
       "about"
     ]
   }

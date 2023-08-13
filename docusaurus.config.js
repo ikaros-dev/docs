@@ -34,11 +34,11 @@ const config = {
           showLastUpdateAuthor: true,
           remarkPlugins: [math, mermaid],
           rehypePlugins: [katex],
-          lastVersion: "0.5",
+          lastVersion: "0.6",
           versions: {
             current: {
-              label: "0.6.0-SNAPSHOT",
-              path: "0.6.0-SNAPSHOT",
+              label: "0.7.0-SNAPSHOT",
+              path: "0.7.0-SNAPSHOT",
             },
           },
         },
@@ -55,6 +55,7 @@ const config = {
             "/0.3/**",
             "/0.4/**",
             "/0.5/**",
+            "/0.6/**",
           ],
         },
       }),

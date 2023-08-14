@@ -15,9 +15,9 @@ GitHub: <https://github.com/ikaros-dev/app>
 
 ## 功能演示
 
-<https://www.bilibili.com/video/BV1Rj411675A>
+<https://www.bilibili.com/video/BV1ku411E7Dw>
 
-<iframe src="//player.bilibili.com/player.html?aid=446729568&bvid=BV1Rj411675A&cid=1218681000&page=1&&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width='100%' height='600px'> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=532195227&bvid=BV1ku411E7Dw&cid=1231958328&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width='100%' height='600px'> </iframe>
 
 ## Android安装包
 

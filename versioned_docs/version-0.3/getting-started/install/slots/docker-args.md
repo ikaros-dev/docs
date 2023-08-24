@@ -12,4 +12,4 @@
 | 链接方式    | 链接地址格式                                                                       | `spring.sql.init.platform` |
 | ----------- | ---------------------------------------------------------------------------------- | -------------------------- |
 | PostgreSQL  | `r2dbc:pool:postgresql://{HOST}:{PORT}/{DATABASE}`                                 | postgresql                 |
-| H2 Database | `r2dbc:h2:file:///${halo.work-dir}/db/halo-next?MODE=MySQL&DB_CLOSE_ON_EXIT=FALSE` | h2                         |
+| H2 Database | `r2dbc:h2:file:///${ikaros.work-dir}/db/ikaros?MODE=MySQL&DB_CLOSE_ON_EXIT=FALSE`  | h2                         |

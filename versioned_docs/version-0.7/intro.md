@@ -52,6 +52,11 @@ docker run \
 
 插件汇总在这个仓库：<https://github.com/ikaros-dev/awesome>
 
+## 视频
+
+- 安装视频：<https://www.bilibili.com/video/BV1zr4y1R7aQ/>
+- 项目介绍视频：<https://www.bilibili.com/video/BV1K841167Sz/>
+
 ## 简要帮助
 
 - 打开全局搜索是按键盘 `Ctrl` + `K` .

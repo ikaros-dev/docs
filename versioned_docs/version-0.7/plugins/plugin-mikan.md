@@ -18,7 +18,7 @@ description: 蜜柑计划插件说明
 ![Ikaros Console Plugin Config](../assests/plugins-plugin-mikan/Snipaste_2023-07-30_15-48-14.png)
 
 :::tip
-这里的qbittorrent的ip是docker的虚拟ip。这个和部署方式有关，需要保证能够连通qbittorrent.
+这里的qbittorrent的ip是docker的虚拟ip。这个和部署方式有关，需要保证能够连通qbittorrent, 您可以通过部署一个portainer在ikaros的network里添加你的qbittorrent容器，这样就有了一个虚拟ip。
 :::
 
 ## 功能说明

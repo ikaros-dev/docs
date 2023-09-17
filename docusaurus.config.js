@@ -135,10 +135,6 @@ const config = {
             title: "社区",
             items: [
               {
-                label: "QQ频道",
-                href: "https://pd.qq.com/s/h5jes8af6"
-              },
-              {
                 label: "微信公众号",
                 href: "https://ikaros.run/wechat.png",
               },

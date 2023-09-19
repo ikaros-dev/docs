@@ -28,7 +28,6 @@ This command starts a local development server and opens up a browser window. Mo
 $ pnpm lint
 ```
 
-
 ### Build
 
 ```

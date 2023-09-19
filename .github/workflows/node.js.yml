@@ -45,12 +45,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.x
-          cache: "pnpm"
+          cache: "yarn"
 
-      - run: pnpm install
+      - run: yarn
 
       # build default locale zh and deploy
-      - run: pnpm build
+      - run: yarn build
 
       - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main
@@ -64,7 +64,7 @@ jobs:
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run"
 
       # build en locale and deploy
-      - run: pnpm build --locale en
+      - run: yarn build --locale en
 
       - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main
@@ -78,7 +78,7 @@ jobs:
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/en"
 
       # build jp locale and deploy
-      - run: pnpm build --locale jp
+      - run: yarn build --locale jp
 
       - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main

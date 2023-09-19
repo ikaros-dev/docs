@@ -48,9 +48,11 @@ jobs:
           cache: "pnpm"
 
       - run: pnpm install
+
+      # build default locale zh and deploy
       - run: pnpm build
 
-      - name: Deploy
+      - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
@@ -60,3 +62,31 @@ jobs:
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run"
+
+      # build en locale and deploy
+      - run: pnpm build --locale en
+
+      - name: Deploy Default Locale zh
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-avzr --delete"
+          SOURCE: "build/"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/en"
+
+      # build jp locale and deploy
+      - run: pnpm build --locale jp
+
+      - name: Deploy Default Locale zh
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-avzr --delete"
+          SOURCE: "build/"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/jp"

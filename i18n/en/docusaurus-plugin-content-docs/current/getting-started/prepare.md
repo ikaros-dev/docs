@@ -95,4 +95,4 @@ Ikaros 理论上可以运行在任何支持 Docker 及 Java 的平台。
 
 ### 更多
 
-[用户指南](/category/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97)
+[用户指南](../category/user-guide)

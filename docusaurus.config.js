@@ -38,6 +38,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ikaros-dev/docs/edit/master/',
+          versions: {
+            current: {
+              label: "0.7-SNAPSHOT",
+              path: "0.7-SNAPSHOT",
+            },
+          },
         },
         blog: {
           showReadingTime: true,

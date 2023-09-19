@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "博客",
+    "message": "发布日志",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "博客",
+    "message": "发布日志",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "最近博文",
+    "message": "最近发布",
     "description": "The label for the left sidebar"
   },
   "sidebar.pre-release.v0.7": {

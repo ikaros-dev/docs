@@ -34,23 +34,23 @@ jobs:
     needs: check
     if: github.event_name == 'push'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.15.1
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: "yarn"
 
-      - run: yarn
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
 
       # build default locale zh and deploy
-      - run: yarn build
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
 
       - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main
@@ -64,7 +64,10 @@ jobs:
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run"
 
       # build en locale and deploy
-      - run: yarn build --locale en
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build --locale en
 
       - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main
@@ -78,7 +81,10 @@ jobs:
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/en"
 
       # build jp locale and deploy
-      - run: yarn build --locale jp
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build --locale jp
 
       - name: Deploy Default Locale zh
         uses: easingthemes/ssh-deploy@main

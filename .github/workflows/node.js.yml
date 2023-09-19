@@ -48,7 +48,7 @@ jobs:
         with:
           cmd: build
 
-      - name: Deploy Default Locale zh
+      - name: Deploy build static files
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
@@ -58,37 +58,3 @@ jobs:
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run"
-
-      # # build en locale and deploy
-      # - name: Run yarn build --locale en
-      #   uses: borales/actions-yarn@v4
-      #   with:
-      #     cmd: build --locale en
-
-      # - name: Deploy Default Locale zh
-      #   uses: easingthemes/ssh-deploy@main
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-      #     ARGS: "-avzr --delete"
-      #     SOURCE: "build/"
-      #     REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-      #     REMOTE_PORT: ${{ secrets.SERVER_PORT }}
-      #     REMOTE_USER: ${{ secrets.SERVER_USER }}
-      #     TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/en"
-
-      # # build jp locale and deploy
-      # - name: Run yarn build --locale jp
-      #   uses: borales/actions-yarn@v4
-      #   with:
-      #     cmd: build --locale jp
-
-      # - name: Deploy Default Locale zh
-      #   uses: easingthemes/ssh-deploy@main
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-      #     ARGS: "-avzr --delete"
-      #     SOURCE: "build/"
-      #     REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-      #     REMOTE_PORT: ${{ secrets.SERVER_PORT }}
-      #     REMOTE_USER: ${{ secrets.SERVER_USER }}
-      #     TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/jp"

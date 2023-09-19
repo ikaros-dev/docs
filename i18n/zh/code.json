@@ -269,5 +269,50 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "index.header.title": {
+    "message": "Ikaros 文档"
+  },
+  "index.header.tagline": {
+    "message": "专注于ACGMN的个人内容管家(CMS)"
+  },
+  "index.header.button.start": {
+    "message": "查看指南"
+  },
+  "index.main.feature.1.title": {
+    "message": "统一资源管理"
+  },
+  "index.main.feature.1.tagline": {
+    "message": "所有的资源由统一的平台进行管理，再也不用东一个西一个了"
+  },
+  "index.main.feature.2.title": {
+    "message": "元数据支持"
+  },
+  "index.main.feature.2.tagline": {
+    "message": "您是否看着全是罗马音的一堆资源不明所以，ikaros支持资源元数据"
+  },
+  "index.main.feature.3.title": {
+    "message": "快捷的搜索"
+  },
+  "index.main.feature.3.tagline": {
+    "message": "即使您有几十万资源，一样可以提供毫秒级的搜索响应"
+  },
+  "index.main.feature.4.title": {
+    "message": "插件支持"
+  },
+  "index.main.feature.4.tagline": {
+    "message": "本体只提供最为基础的功能，其它附加功能由插件提供"
+  },
+  "index.main.feature.5.title": {
+    "message": "客户端支持"
+  },
+  "index.main.feature.5.tagline": {
+    "message": "各个主流平台的客户端，包括不限于Windows, 安卓"
+  },
+  "index.main.feature.6.title": {
+    "message": "文件加密分段上云"
+  },
+  "index.main.feature.6.tagline": {
+    "message": "支持主流云端的加密分段备份，在保障数据安全的前提下将云端的优势利用起来"
   }
 }

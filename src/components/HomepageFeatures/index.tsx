@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Translate, {translate} from '@docusaurus/Translate';
 
 type FeatureItem = {
   title: string;
@@ -9,29 +10,50 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: translate({id: 'index.main.feature.1.title'}),
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <Translate id="index.main.feature.1.tagline"/>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: translate({id: 'index.main.feature.2.title'}),
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <Translate id="index.main.feature.2.tagline"/>
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: translate({id: 'index.main.feature.3.title'}),
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <Translate id="index.main.feature.3.tagline"/>
+      </>
+    ),
+  },
+  {
+    title: translate({id: 'index.main.feature.4.title'}),
+    description: (
+      <>
+        <Translate id="index.main.feature.4.tagline"/>
+      </>
+    ),
+  },
+  {
+    title: translate({id: 'index.main.feature.5.title'}),
+    description: (
+      <>
+        <Translate id="index.main.feature.5.tagline"/>
+      </>
+    ),
+  },
+  {
+    title: translate({id: 'index.main.feature.6.title'}),
+    description: (
+      <>
+        <Translate id="index.main.feature.6.tagline"/>
       </>
     ),
   },

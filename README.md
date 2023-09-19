@@ -27,7 +27,7 @@ This command generates static content into the `build` directory and can be serv
 ### publish docs version
 
 ```
-yarn docusaurus docs:version 2.0
+yarn docusaurus docs:version 0.6
 ```
 
 ### generate i18n json config

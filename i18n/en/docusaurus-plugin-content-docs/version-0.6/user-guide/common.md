@@ -22,11 +22,11 @@ Ikaros 作为一款强大的ACGMN内容管理器，配合上不同的模板与�
 
 ## 文件
 
-由用户上传的，供剧集等各个地方引用的文件，也是您的资源文件，存储在[工作目录](/getting-started/prepare#%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95)下的`files`目录里。
+由用户上传的，供剧集等各个地方引用的文件，也是您的资源文件，存储在[工作目录](/getting-started/prepare)下的`files`目录里。
 
 ## 剧集
 
-剧集是一个带有元数据的文件元素，同时包含数据和文件，数据存储在数据库里，文件存储在[工作目录](/getting-started/prepare#%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95)下的`files`目录里。
+剧集是一个带有元数据的文件元素，同时包含数据和文件，数据存储在数据库里，文件存储在[工作目录](/getting-started/prepare)下的`files`目录里。
 
 ## 条目
 

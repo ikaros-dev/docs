@@ -1,5 +1,6 @@
 ---
 title: 关于文档
+sidebar_label: About
 description: 关于本文档站点的一些说明
 ---
 

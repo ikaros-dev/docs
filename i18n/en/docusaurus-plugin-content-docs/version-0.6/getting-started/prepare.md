@@ -1,5 +1,6 @@
 ---
 title: 写在前面
+sidebar_label: Prepare
 description: 在开始前，您需要了解的事项
 ---
 

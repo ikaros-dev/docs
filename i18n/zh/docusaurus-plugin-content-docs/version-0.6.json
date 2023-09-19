@@ -1,14 +1,15 @@
 {
+
   "sidebar.docsSidebar.category.getting-started": {
-    "message": "Getting Start"
+    "message": "入门"
   },
   "sidebar.docsSidebar.category.getting-started-install": {
-    "message": "Install"
+    "message": "安装指南"
   },
   "sidebar.docsSidebar.category.plugins": {
-    "message": "Plugins"
+    "message": "插件"
   },
   "sidebar.docsSidebar.category.user-guide": {
-    "message": "User Guide"
+    "message": "用户指南"
   }
 }

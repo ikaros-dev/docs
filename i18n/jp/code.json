@@ -1,9 +1,9 @@
 {
   "versionsPage.versionEntry.link": {
-    "message": "文档"
+    "message": "Documentation"
   },
   "versionsPage.versionEntry.releaseNotes": {
-    "message": "发布日志"
+    "message": "Release Notes"
   },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",

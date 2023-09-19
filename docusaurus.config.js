@@ -15,7 +15,7 @@ const config = {
   favicon: "img/favicon.ico",
   i18n: {
     defaultLocale: "zh-Hans",
-    locales: ["zh-Hans"],
+    locales: ["zh-Hans", 'en', 'jp'],
   },
   organizationName: "ikaros-dev", // Usually your GitHub org/user name.
   projectName: "ikaros", // Usually your repo name.
@@ -81,6 +81,10 @@ const config = {
           {
             href: "https://ikaros.run",
             label: "官网",
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             type: "docsVersionDropdown",

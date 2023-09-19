@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Ikaros 文档",
+    "description": "The title in the navbar"
+  },
+  "item.label.官网": {
+    "message": "官网",
+    "description": "Navbar item with label 官网"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

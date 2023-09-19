@@ -1,19 +1,23 @@
 {
   "title": {
-    "message": "Ikaros Docs",
+    "message": "Ikaros Documentation",
     "description": "The title in the navbar"
   },
   "logo.alt": {
     "message": "Ikaros Logo",
     "description": "The alt text of navbar logo"
   },
+  "item.label.Offical": {
+    "message": "Official",
+    "description": "Navbar item with label Official"
+  },
   "item.label.Docs": {
-    "message": "Docs",
-    "description": "Navbar item with label Docs"
+    "message": "Guides",
+    "description": "Navbar item with label Guides"
   },
   "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
+    "message": "Release",
+    "description": "Navbar item with label Release"
   },
   "item.label.GitHub": {
     "message": "GitHub",

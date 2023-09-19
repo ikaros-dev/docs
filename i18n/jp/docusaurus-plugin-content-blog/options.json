@@ -1,14 +1,17 @@
 {
   "title": {
-    "message": "Blog",
-    "description": "The title for the blog used in SEO"
+    "message": "リリースノート",
+    "description": "SEOで使用されるブログのタイトル"
   },
   "description": {
-    "message": "Blog",
-    "description": "The description for the blog used in SEO"
+    "message": "リリースノート",
+    "description": "SEOで使用されるブログの説明"
   },
   "sidebar.title": {
-    "message": "Recent posts",
-    "description": "The label for the left sidebar"
+    "message": "最近のリリース",
+    "description": "左サイドバーのラベル"
+  },
+  "sidebar.pre-release.v0.7": {
+    "message": "テスト版 0.7"
   }
 }

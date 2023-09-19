@@ -1,22 +1,26 @@
 {
   "title": {
-    "message": "Ikaros Docs",
-    "description": "The title in the navbar"
+    "message": "イカロス ドキュメンテーション",
+    "description": "ナビゲーションバーのタイトル"
   },
   "logo.alt": {
-    "message": "Ikaros Logo",
-    "description": "The alt text of navbar logo"
+    "message": "イカロス ロゴ",
+    "description": "ナビゲーションバーのロゴの代替テキスト"
+  },
+  "item.label.Offical": {
+    "message": "公式",
+    "description": "ラベルが「公式」のナビゲーションアイテム"
   },
   "item.label.Docs": {
-    "message": "Docs",
-    "description": "Navbar item with label Docs"
+    "message": "ガイド",
+    "description": "ラベルが「ガイド」のナビゲーションアイテム"
   },
   "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
+    "message": "リリース",
+    "description": "ラベルが「リリース」のナビゲーションアイテム"
   },
   "item.label.GitHub": {
     "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+    "description": "ラベルが「GitHub」のナビゲーションアイテム"
   }
 }

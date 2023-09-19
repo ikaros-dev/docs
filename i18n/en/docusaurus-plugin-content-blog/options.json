@@ -1,14 +1,17 @@
 {
   "title": {
-    "message": "Blog",
+    "message": "Release Notes",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "Blog",
+    "message": "Release Notes",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Recent posts",
+    "message": "Recently Released",
     "description": "The label for the left sidebar"
+  },
+  "sidebar.pre-release.v0.7": {
+    "message": "Pre-release version 0.7"
   }
 }

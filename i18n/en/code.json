@@ -269,5 +269,50 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  }, 
+  "index.header.title": {
+    "message": "Ikaros Documentation"
+  },
+  "index.header.tagline": {
+    "message": "Dedicated to ACGMN's Personal Content Management System (CMS)"
+  },
+  "index.header.button.start": {
+    "message": "View Guide"
+  },
+  "index.main.feature.1.title": {
+    "message": "Unified Resource Management"
+  },
+  "index.main.feature.1.tagline": {
+    "message": "All resources are managed by a unified platform. No more dealing with scattered items."
+  },
+  "index.main.feature.2.title": {
+    "message": "Metadata Support"
+  },
+  "index.main.feature.2.tagline": {
+    "message": "Are you looking at a pile of resources all in Romanized characters and feeling lost? Ikaros supports resource metadata."
+  },
+  "index.main.feature.3.title": {
+    "message": "Quick Search"
+  },
+  "index.main.feature.3.tagline": {
+    "message": "Even if you have hundreds of thousands of resources, we can provide millisecond-level search response."
+  },
+  "index.main.feature.4.title": {
+    "message": "Plugin Support"
+  },
+  "index.main.feature.4.tagline": {
+    "message": "The core provides only the most basic functions. Other additional features are provided by plugins."
+  },
+  "index.main.feature.5.title": {
+    "message": "Client Support"
+  },
+  "index.main.feature.5.tagline": {
+    "message": "Clients for various mainstream platforms, including but not limited to Windows and Android."
+  },
+  "index.main.feature.6.title": {
+    "message": "File Encryption and Cloud Upload in Segments"
+  },
+  "index.main.feature.6.tagline": {
+    "message": "Supports encrypted segmented backup on mainstream cloud platforms. Utilize the advantages of the cloud while ensuring data security."
   }
 }

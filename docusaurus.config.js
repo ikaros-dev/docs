@@ -94,49 +94,51 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "About",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Offical",
+                href: "https://ikaros.run",
+              },
+              {
+                label: "GitHub Organization",
+                href: "https://github.com/ikaros-dev",
+              },
+              {
+                label: "Docs Access Analysis",
+                href: "https://analytics.ikaros.run/share/HpFEzaaekV9NOCZn/ikaros%20docs",
+              },
+              {
+                label: "Server Status",
+                href: "https://status.ikaros.run/status/ikaros",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "WeChat Channel",
+                href: "https://ikaros.run/wechat.png",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "GitHub Issues",
+                href: "https://github.com/ikaros-dev/ikaros/issues",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
+                label: "Telegram Channel",
+                href: "https://t.me/run_ikaros_channel",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "Telegram Group",
+                href: "https://t.me/run_ikaros",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

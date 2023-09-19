@@ -1,47 +1,76 @@
 ---
+id: intro
+sidebar_label: 简介
+title: ""
 sidebar_position: 1
+hide_title: true
+slug: /
 ---
 
-# Tutorial Intro
+<p align="center">
+    <a href="https://ikaros.run" target="_blank" rel="noopener noreferrer">
+        <img width="100" src="https://ikaros.run/logo.png" alt="Ikaros logo" />
+    </a>
+</p>
 
-Let's discover **Docusaurus in less than 5 minutes**.
+<p align="center"><b>Ikaros</b> [Ίκαρος]，专注于ACGMN的个人内容管家(CMS)。</p>
 
-## Getting Started
+<p align="center">ACGMN全拼是：Anime(动画) + Comic(漫画) + Game(游戏) + Music(音乐) + Novel(小说)</p>
 
-Get started by **creating a new site**.
+<p align="center">
+<a href="https://github.com/ikaros-dev/ikaros/releases"><img alt="Github Releases" src="https://img.shields.io/github/v/release/ikaros-dev/ikaros?include_prereleases&style=flat-square" /></a>
+<a href="https://github.com/ikaros-dev/ikaros/stargazers"><img alt="GitHub Stargazers" src="https://img.shields.io/github/stars/ikaros-dev/ikaros.svg?style=flat-square&label=Stars&logo=github" /></a>
+<a href="https://hub.docker.com/r/ikarosrun/ikaros"><img alt="Docker pulls" src="https://img.shields.io/docker/pulls/liguohaocn/ikaros?style=flat-square" /></a>
+<a href="https://app.codecov.io/github/ikaros-dev/ikaros"><img alt="code coverage" src="https://img.shields.io/codecov/c/github/ikaros-dev/ikaros/master?style=flat-square" /></a>
+<a href="https://github.com/ikaros-dev/ikaros/commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ikaros-dev/ikaros.svg?style=flat-square" /></a>
+<a href="https://github.com/ikaros-dev/ikaros/actions"><img alt="GitHub workflow build status" src="https://img.shields.io/github/actions/workflow/status/ikaros-dev/ikaros/ikaros-server-ci.yml?branch=master&style=flat-square" /></a>
+<br />
+</p>
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+---
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+## 快速开始
 
 ```bash
-cd my-website
-npm run start
+docker run \
+  -it -d \
+  --name ikaros \
+  -p 9999:9999 \
+  -v ~/.ikaros:/root/.ikaros \
+  ikarosrun/ikaros:v0.7.4 \
+  --ikaros.security.initializer.master-username=tomoki \
+  --ikaros.security.initializer.master-password=tomoki
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+控制台的路径是 `/console` 。
+默认端口是`9999`，默认用户名密码是通过上述两个参数控制的，
+如没有用这两个参数启动，则默认的用户名是 `tomoki`，密码在打印在日志里(只有首次运行会打印密码)。
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+以上仅作为体验使用，详细部署文档请查阅：[使用 Docker Compose 部署](./getting-started/install/docker-compose.md)
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## 插件
+
+插件汇总在这个仓库：<https://github.com/ikaros-dev/awesome>
+
+## 视频
+
+- 安装视频：<https://www.bilibili.com/video/BV1zr4y1R7aQ/>
+- 项目介绍视频：<https://www.bilibili.com/video/BV1K841167Sz/>
+
+## 简要帮助
+
+- 打开全局搜索是按键盘 `Ctrl` + `K` .
+
+## 许可证
+
+[![license](https://img.shields.io/github/license/ikaros-dev/ikaros.svg?style=flat-square)](https://github.com/ikaros-dev/ikaros/blob/master/LICENSE)
+
+ikaros 使用 AGPL-v3.0 协议开源，请遵守开源协议。
+
+## 贡献
+
+参考 [CONTRIBUTING](https://github.com/ikaros-dev/ikaros/blob/master/CONTRIBUTING.MD)。
+
+## 状态
+
+![Repobeats analytics](https://repobeats.axiom.co/api/embed/f7285853048ff09f313f6483901e2af0e638f666.svg "Repobeats analytics image")

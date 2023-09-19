@@ -13,21 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.15.1
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: "pnpm"
 
-      - run: pnpm install
-      - run: pnpm lint
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
 
   build:
     runs-on: ubuntu-latest

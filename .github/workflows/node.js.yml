@@ -43,7 +43,7 @@ jobs:
           cmd: install # will run `yarn install` command
 
       # build default locale zh and deploy
-      - name: Run yarn install
+      - name: Run yarn build
         uses: borales/actions-yarn@v4
         with:
           cmd: build
@@ -60,7 +60,7 @@ jobs:
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run"
 
       # build en locale and deploy
-      - name: Run yarn install
+      - name: Run yarn build --locale en
         uses: borales/actions-yarn@v4
         with:
           cmd: build --locale en
@@ -77,7 +77,7 @@ jobs:
           TARGET: "/docker/app/nginxWebUI/www/docs.ikaros.run/en"
 
       # build jp locale and deploy
-      - name: Run yarn install
+      - name: Run yarn build --locale jp
         uses: borales/actions-yarn@v4
         with:
           cmd: build --locale jp

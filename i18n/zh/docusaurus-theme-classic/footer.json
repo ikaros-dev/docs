@@ -1,8 +1,4 @@
 {
-  "copyright": {
-    "message": "Copyright © 2023 Ikaros Developer. Built with Docusaurus.",
-    "description": "The footer copyright"
-  },
   "link.title.About": {
     "message": "关于"
   },

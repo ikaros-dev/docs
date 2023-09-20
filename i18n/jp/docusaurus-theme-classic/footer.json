@@ -1,8 +1,4 @@
 {
-  "copyright": {
-    "message": "著作権 © 2023 Ikaros Developer. Docusaurus で作成されました。",
-    "description": "フッターの著作権"
-  },
   "link.title.About": {
     "message": "について"
   },

@@ -1,53 +1,52 @@
 ---
-title: 基础说明
-description: Ikaros 中的基本概念说明
+title: Basic Explanation
+description: Basic concepts in Ikaros
 ---
-Ikaros 作为一款强大的ACGMN内容管理器，配合上不同的模板与插件，可以很好地帮助你管理自己的内容。
 
-为了更好地发挥出 Ikaros 的价值，这里有一些基本概念需要你进行了解。
+Ikaros, as a powerful ACGMN content manager, coupled with various templates and plugins, can help you effectively manage your content.
 
-## 控制台
+To make the most of Ikaros, there are some basic concepts you need to understand.
 
-控制台是一个 Ikaros 站点的后台管理系统，只有具有权限的登录用户才可以正常使用控制台功能。你可以在控制台中管理站点中的文件、条目、插件等各种内容，调整站点使用的各种设置。
+## Console
+
+The console is the backend management system of an Ikaros site, and only logged-in users with appropriate permissions can use the console's functions. You can use the console to manage various content such as files, entries, plugins, and adjust various settings used by the site.
 
 :::info
-控制台的访问入口为 `/console`。
+The entrance to the console is `/console`.
 :::
 
 ![Ikaros Console](/img/user-guide-common/Snipaste_2023-07-30_13-15-30.png)
 
-## 元数据
+## Metadata
 
-元素的信息或者描述等因素的集合
+The collection of information or descriptions of elements.
 
-## 文件
+## Files
 
-由用户上传的，供剧集等各个地方引用的文件，也是您的资源文件，存储在[工作目录](../getting-started/prepare)下的`files`目录里。
+Uploaded by users, files referenced by various places such as episodes, are also your resource files, stored in the `files` directory under the [working directory](../getting-started/prepare).
 
-## 剧集
+## Episodes
 
-剧集是一个带有元数据的文件元素，同时包含数据和文件，数据存储在数据库里，文件存储在[工作目录](../getting-started/prepare)下的`files`目录里。
+An episode is a file element with metadata, containing both data and files. The data is stored in the database, and the files are stored in the `files` directory under the [working directory](../getting-started/prepare).
 
-## 条目
+## Entries
 
-条目是 Ikaros 中的核心概念之一。一个条目是管理您内容的基本单位，包括多个剧集和条目的元数据，
-这个概念源自 [番组计划](https://bgm.tv/) 。
+An entry is one of the core concepts in Ikaros. An entry is the basic unit for managing your content, including multiple episodes and metadata of the entry. This concept originates from [Bangumi Project](https://bgm.tv/).
 
-## 插件
+## Plugins
 
-用于扩展 Ikaros 功能的软件包。插件独立于 Ikaros 核心应用，可以单独安装、升级、卸载。
+Software packages used to extend the functionality of Ikaros. Plugins are independent of the core Ikaros application and can be installed, upgraded, and uninstalled separately.
 
 :::info
-目前可以获取插件：Awesome Ikaros：<https://github.com/ikaros-dev/awesome>
+You can find plugins here: Awesome Ikaros: <https://github.com/ikaros-dev/awesome>
 :::
 
-### 版本适配规则
+### Version Compatibility Rules
 
-插件的大版本和小版本和本体保持相同，
-比如 0.3.z 的插件，需要本体版本为 0.3.x 才可以正常工作
+The major and minor versions of the plugin should be the same as the core. For example, a 0.3.z plugin requires a core version of 0.3.x to work properly.
 
-其中z无需相同，只需要最新(z最大)即可。
+The z can be different, only the latest (highest z) is required.
 
-- 插件 0.3.z 只能在 本体 0.3.x 上正常使用
-- 插件 0.2.z 或 0.4.z 无法在 本体 0.3.x 上正常使用
-- 插件 0.3.z 无法在 本体 0.2.x 或 0.4.x 上正常使用
+- Plugin 0.3.z can only work properly on Core 0.3.x
+- Plugins 0.2.z or 0.4.z cannot work properly on Core 0.3.x
+- Plugin 0.3.z cannot work properly on Core 0.2.x or 0.4.x

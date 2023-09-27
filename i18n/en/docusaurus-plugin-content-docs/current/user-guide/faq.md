@@ -1,23 +1,23 @@
 ---
-title: 常见问题
-description: 使用上的常见问题
+title: Frequently Asked Questions
+description: Common questions about using Ikaros
 ---
 
-### Ikaros 是什么？
+### What is Ikaros?
 
-**Ikaros** [Ίκαρος]，专注于ACGMN的个人内容管家(CMS)，用于方便管理您的ACGMN内容的助手。
+**Ikaros** [Ίκαρος] is a personal content manager (CMS) dedicated to ACGMN, designed to conveniently manage your ACGMN content.
 
-### 如何导入已经存在的资源
+### How can I import existing resources?
 
-对于已经存在的资源文件，可以借助本地导入插件
-关于资源导入，可以先按照以下步骤来
+For existing resource files, you can use the local import plugin. To import resources, follow these steps:
 
-1. 安装本地导入插件并启动
-2. 进nas的web控制台文件管理，将你已经存在的资源，移动到ikaros的links目录
-3. 进ikaros后台，停止本地导入插件，再启动，这里会卡一段时间，因为ikaros在将links目录里的文件全部导入文件管理，默认是软链接，软链接失败会复制
-4 过段时间，等ikaros后台能正常访问了，代表导入结束了，能在ikaros后台看到对应的文件
-5 进nas控制台文件管理，将links目录文件移动会原来的位置。
+1. Install the local import plugin and start it.
+2. In the NAS web console file manager, move your existing resources to the links directory of Ikaros.
+3. In the Ikaros backend, stop and then start the local import plugin. This process may take some time as Ikaros will import all the files from the links directory. By default, they are symbolic links, and if symbolic linking fails, they will be copied.
+4. After a while, when the Ikaros backend can be accessed normally, it means that the import is complete. You will be able to see the corresponding files in the Ikaros backend.
+5. In the NAS console file manager, move the files from the links directory back to their original location.
 
-资源导入结束，后续是：
-6. ikaros后台添加对应条目
-7. 进入条目详情进行资源绑定
+After importing resources, follow these steps:
+
+6. In the Ikaros backend, add the corresponding entry.
+7. Go to the entry details to bind the resources.

@@ -1,46 +1,47 @@
 ---
-title: Jellyfin插件
-description: Jellyfin插件说明
+title: Jellyfin Plugin
+description: Documentation for the Jellyfin Plugin
 ---
 
 ## GitHub
 
-<https://github.com/ikaros-dev/plugin-jellyfin>
+[https://github.com/ikaros-dev/plugin-jellyfin](https://github.com/ikaros-dev/plugin-jellyfin)
 
 ## Jellyfin
 
-- 官网：<https://jellyfin.org/>
+- Official Website: [https://jellyfin.org/](https://jellyfin.org/)
 
-## 条目目录生成任务
+## Task for Generating Subject Directories
 
-此插件启动后，每隔15分钟执行一次条目目录生成任务，
+After this plugin is started, it will execute a task to generate subject directories every 15 minutes.
 
-该任务会根据数据库条目数据，在应用目录下的`jellyfin` 目录下生成两个目录：
+This task will generate two directories under the `jellyfin` directory in the application directory based on the database entry data:
 
-- `normal` 目录：这个目录下全是 不属于 `NSFW` 的 条目生成的目录
-- `nsfw` 目录：这个目录下全是 属于 `NSFW` 的 条目生成的目录
+- `normal` directory: This directory contains directories generated for entries that are not marked as `NSFW`.
+- `nsfw` directory: This directory contains directories generated for entries that are marked as `NSFW`.
 
-单个条目目录的名称格式是：`条目中文名 + '-' + 条目原始名 + '(' + yyyy-MM-hh + ')'`, 例如 `轻音少女 - けいおん！ (2009-04-02)`
+The name format of a single subject directory is: `Chinese Name of Subject + '-' + Original Name of Subject + '(' + yyyy-MM-hh + ')'`, for example, `K-On! - けいおん！ (2009-04-02)`.
 
-单个条目目录里，会生成(软链接) 封面文件 `poster.jpg` 和 生成`tvshow.nfo` 文件，
+In a single subject directory, a `poster.jpg` (soft link) and a `tvshow.nfo` file will be generated.
 
-如果条目的剧集绑定了资源，则会生成(软链接)对应的剧集文件，剧集文件名就是资源文件的名称，
+If the subject's episodes are bound to resources, the corresponding episode files (soft links) will be generated. The episode file names are the names of the resource files.
 
-如果对应文件名称在数据库里可以找到对应的 后缀为 `.ass` 的文件(不需要在ikaros管理的同一个目录里)，则生成(软链接)对应的字幕文件。
+If a file with the corresponding name can be found in the database, with the suffix `.ass` (it does not need to be in the same directory managed by Ikaros), the corresponding subtitle file (soft link) will be generated.
 
-最后一个条目目录的生成文件大概如下图：
+The generated files in the last subject directory are roughly as shown in the following image:
 
 ![Ikaros Generate Jellyfin Subject Files](/img/plugins-plugin-jellyfin/Snipaste_2023-07-30_15-28-48.png)
 
-## 如何使用生成的目录
+## How to Use the Generated Directories
 
-Jellyfin 的容器挂载目录添加这个目录，在后台添加库，
-你可以选择挂载 `normal` 或者 `nsfw` 目录其中的哪个，
+Add this directory to the mounting directory of the Jellyfin container, and then add a library in the backend.
 
-内容类型选择 `节目`
+You can choose to mount either the `normal` or `nsfw` directory.
+
+For content type, select `TV shows`.
 
 :::tip
-元数据下载器建议全部不勾选！如果实在要勾选，请安装jellyfin的番组计划插件，勾选番组计划，其它的都不建议勾选。
+It is recommended to leave all metadata downloaders unchecked! If you really want to check, please install the Bangumi Plugin for Jellyfin, and check Bangumi. It is not recommended to check anything else.
 :::
 
-然后您做了一些其它设置后就可以保存了。
+After making some other settings, you can save them.

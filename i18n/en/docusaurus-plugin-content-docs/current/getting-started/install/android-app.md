@@ -1,14 +1,14 @@
 ---
-title: 安卓APP(WIP)
-description: 安卓原生APP
+title: Android App (WIP)
+description: Native Android App
 ---
 
-## 介绍
+## Introduction
 
-安卓手机的原生APP
+Native app for Android phones.
 
 GitHub: <https://github.com/ikaros-dev/andapp>
 
 :::tip
-还没配好CI打包
+CI packaging has not been set up yet.
 :::

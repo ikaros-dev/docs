@@ -1,17 +1,17 @@
 ---
-title: 关于文档
+title: About the Documentation
 sidebar_label: About
-description: 关于本文档站点的一些说明
+description: Information about this documentation site
 ---
 
 :::note
-此文档使用 [Docusaurus](https://docusaurus.io/) 搭建，感谢 [Docusaurus](https://github.com/facebook/docusaurus) 社区所做的贡献。
+This documentation site is built using [Docusaurus](https://docusaurus.io/). Thanks to the [Docusaurus community](https://github.com/facebook/docusaurus) for their contributions.
 :::
 
-## 参与贡献
+## Contributing
 
 :::tip
-如果你发现文档中有不正确或者需要添加的内容，非常欢迎参与到文档编辑当中。
+If you find any inaccuracies or have content to add, we welcome your contributions to the documentation.
 :::
 
-当前文档的仓库地址为 [ikaros-dev/docs](https://github.com/ikaros-dev/docs) ，所以你可以 fork 此仓库，修改之后提交 `Pull request` 等待我们合并即可。
+The current repository for this documentation is located at [ikaros-dev/docs](https://github.com/ikaros-dev/docs). You can fork this repository, make your changes, and submit a pull request for us to review and merge.

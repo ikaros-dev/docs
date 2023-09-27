@@ -1,37 +1,37 @@
 ---
-title: 文件
-description: 文件管理相关功能说明
+title: Files
+description: Functions related to file management
 ---
 
-## 管理主面板
+## Management Dashboard
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_13-26-41.png)
 
-- 1：选择查询的文件类型，包括 `图片`、 `视频`、 `文档`、 `音声`、`未知`， 选择后会更新下方文件列表；
-- 2：输入文件名称，按`回车`键进行模糊查询，会更新下方文件列表；
-- 3：显示符合筛选条件的文件总数；
-- 4：选择分页查询的单页文件数；
-- 5：点击跳转到上一页，会更新下方文件列表，如果是第一页则不可点击；
-- 6：跳转到指定页，会更新下方文件列表；
-- 7：输入页数，跳转到指定页，会更新下方文件列表；
-- 8：打开右边的文件上传抽屉；
-- 9：控制当前单页的数据是否更加ID进行排序显示；
-- 10：当前行，双击打开左边的文件详情抽屉；
-- 11：修改文件名称(不建议修改后缀名)，按`回车`键进行更新；
-- 12：打开左边的文件详情抽屉；
-- 13：删除当前行的文件数据，后台会同时删除文件；
+- 1: Select the file type to be queried, including `Images`, `Videos`, `Documents`, `Audio`, `Unknown`. After selection, the file list below will be updated.
+- 2: Enter the file name and press `Enter` for a fuzzy search. The file list below will be updated.
+- 3: Display the total number of files that meet the filtering conditions.
+- 4: Select the number of files per page for paginated queries.
+- 5: Click to go to the previous page. The file list below will be updated. If it is the first page, it cannot be clicked.
+- 6: Go to a specified page. The file list below will be updated.
+- 7: Enter the page number to go to a specified page. The file list below will be updated.
+- 8: Open the file upload drawer on the right.
+- 9: Control whether the current page's data is displayed in order by ID.
+- 10: Double-click the current row to open the file details drawer on the left.
+- 11: Modify the file name (it is not recommended to modify the file extension), and press `Enter` to update.
+- 12: Open the file details drawer on the left.
+- 13: Delete the file data of the current row. The backend will also delete the file.
 
-## 右边文件上传抽屉
+## Right File Upload Drawer
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_13-46-04.png)
 
-## 左边文件详情抽屉
+## Left File Details Drawer
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_13-48-50.png)
 
-- 上方文件预留区域：可以预览一些常用图片和视频文件格式，暂不支持预览其它文件格式；
-- 下方文件详情区域：展示了文件的一些详情信息；
+- Upper area for file preview: You can preview some commonly used image and video file formats. Preview of other file formats is not supported at the moment.
+- Lower area for file details: Displays some detailed information about the file.
 
-文件名称处，鼠标双击文件名称，可以修改文件名称，修改完后鼠标点下其它地方保存名称。
+For the file name, double-click it to modify the file name. After modification, click elsewhere to save the name.
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_17-45-37.png)

@@ -1,6 +1,6 @@
 ---
-title: 百度网盘插件(WIP)
-description: 百度网盘插件说明
+title: Baidu Netdisk Plugin (WIP)
+description: Documentation for the Baidu Netdisk Plugin
 ---
 
 WIP

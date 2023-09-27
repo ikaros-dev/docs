@@ -1,56 +1,56 @@
 ---
-title: 非原生APP
-description: 基于Flutter的跨平台移动端APP
+title: Non-Native App
+description: Cross-platform mobile app based on Flutter
 ---
 
-## 介绍
+## Introduction
 
-基于Flutter的跨平台移动端APP
+Cross-platform mobile app based on Flutter.
 
 GitHub: <https://github.com/ikaros-dev/app>
 
 :::tip
-目前功能不完善，欢迎体验测试
+Currently, the functionality is not complete. Feel free to experience and test.
 :::
 
-## 功能演示
+## Feature Demo
 
 <https://www.bilibili.com/video/BV1ku411E7Dw>
 
 <iframe src="//player.bilibili.com/player.html?aid=532195227&bvid=BV1ku411E7Dw&cid=1231958328&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width='100%' height='600px'> </iframe>
 
-## Android安装包
+## Android Installation Package
 
-先进这个页面：<https://github.com/ikaros-dev/app/actions/workflows/android-release.yml>
+Go to this page: <https://github.com/ikaros-dev/app/actions/workflows/android-release.yml>
 
 ![Github Ikaros Flutter App Actions](/img/getting-started-install-flutter-app/Snipaste_2023-07-30_12-27-53.png)
 
-往下拉，下载压缩包
+Scroll down and download the compressed package.
 
 ![Github Ikaros Flutter App Actions](/img/getting-started-install-flutter-app/Snipaste_2023-07-30_12-31-38.png)
 
-解压后，就是安装包了
+After extraction, you will have the installation package.
 
 ![Github Ikaros Flutter App Actions](/img/getting-started-install-flutter-app/Snipaste_2023-07-30_12-34-29.png)
 
-## IOS安装包
+## iOS Installation Package
 
 :::tip
-IOS安装包是未签名的，您需要进行[自签](https://bing.com/search?q=ios%E8%87%AA%E7%AD%BE&ensearch=1)才能正常使用。
+The iOS installation package is not signed. You need to [self-sign](https://bing.com/search?q=ios%E8%87%AA%E7%AD%BE&ensearch=1) it to use it normally.
 :::
 
-先进这个页面：<https://github.com/ikaros-dev/app/actions/workflows/ios-release.yml>
+Go to this page: <https://github.com/ikaros-dev/app/actions/workflows/ios-release.yml>
 
 ![Github Ikaros Flutter App Actions](/img/getting-started-install-flutter-app/Snipaste_2023-07-30_12-40-35.png)
 
-往下拉，下载压缩包
+Scroll down and download the compressed package.
 
 ![Github Ikaros Flutter App Actions](/img/getting-started-install-flutter-app/Snipaste_2023-07-30_12-41-09.png)
 
-解压后，就是安装包了
+After extraction, you will have the installation package.
 
 ![Github Ikaros Flutter App Actions](/img/getting-started-install-flutter-app/Snipaste_2023-07-30_12-44-00.png)
 
-## 其它平台
+## Other Platforms
 
-暂时没有，就编译了`Android`和`IOS`，其它平台也没做适配。
+Currently not available. Only Android and iOS have been compiled, and no adaptation has been made for other platforms.

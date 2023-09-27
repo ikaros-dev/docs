@@ -1,37 +1,37 @@
 ---
-title: 蜜柑计划插件
-description: 蜜柑计划插件说明
+title: Mikan Plugin
+description: Documentation for the Mikan Plugin
 ---
 
 ## GitHub
 
-<https://github.com/ikaros-dev/plugin-mikan>
+[https://github.com/ikaros-dev/plugin-mikan](https://github.com/ikaros-dev/plugin-mikan)
 
-## 蜜柑计划
+## Mikan
 
-- 官网：<https://mikanime.tv/>
+- Official Website: [https://mikanime.tv/](https://mikanime.tv/)
 
-## 配置
+## Configuration
 
-您可以在后台配置蜜柑计划的RSS和`Qbitorrent`的地址
+You can configure the RSS feed and Qbittorrent address for Mikan in the backend.
 
 ![Ikaros Console Plugin Config](/img/plugins-plugin-mikan/Snipaste_2023-07-30_15-48-14.png)
 
 :::tip
-这里的qbittorrent的ip是docker的虚拟ip。这个和部署方式有关，需要保证能够连通qbittorrent, 您可以通过部署一个portainer在ikaros的network里添加你的qbittorrent容器，这样就有了一个虚拟ip。
+The IP of qBittorrent here is the virtual IP of Docker. This is related to the deployment method. You need to ensure that you can connect to qBittorrent. You can deploy a Portainer and add your qBittorrent container to the network of Ikaros. This way, you will have a virtual IP.
 :::
 
-## 功能说明
+## Functionality
 
-会在插件启动时，开启两个定时任务：
+Two scheduled tasks will be started when the plugin is launched:
 
-- 解析蜜柑计划订阅任务：每隔三十分钟解析蜜柑计划订阅RSS，将对应的torrent添加到qbittorrent，分类是 `ikaors` ，并给torrent打上标签，标签值是番组计划的条目ID。
-- 导入下载文件并添加条目：每隔五分钟，查询下qbittorrent的`ikaros`分类的文件是否下载完成，将下载完成的导入(软链接)ikaros的文件管理，并添加对应的条目，并匹配条目剧集，如果匹配到剧集，则给用户发送邮件，邮件地址的配置在 `设置` => `邮件配置` => `开启邮件` => `收件方邮件地址` 。
+- Parsing Mikan RSS feed: Every thirty minutes, parse the Mikan RSS feed, add the corresponding torrents to qBittorrent, categorize them as `ikaors`, and label the torrents with the item ID from Bangumi. 
+- Import downloaded files and add items: Every five minutes, check if the files in the `ikaors` category of qBittorrent have finished downloading. Import the completed downloads (as symbolic links) into Ikaros' file management, add the corresponding items, and match the item's episodes. If a match is found, an email will be sent to the user. The email address is configured in `Settings` => `Email Configuration` => `Enable Email` => `Recipient Email Address`.
 
 :::tip
-您需要开启并配置好SMTP邮件服务器配置，才可以正常接受邮件。<br />您的封面URL邮件客户端能够正常访问，邮件的封面图片才会正常显示。
+You need to enable and configure the SMTP email server to receive emails properly. <br /> The cover URL in your email client should be accessible for the cover images in the email to display correctly.
 :::
 
-邮件大概如下图：
+The email will look something like this:
 
 ![Ikaros Subject Update Mail](/img/plugins-plugin-mikan/Snipaste_2023-07-30_16-04-21.png)

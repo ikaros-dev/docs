@@ -1,64 +1,62 @@
 ---
-title: 条目
-description: 条目管理相关功能说明
+title: Subjects
+description: Functions related to subject management
 ---
 
-## 管理主面板
+## Management Panel
 
 ![Ikaros Console Subject Manager](/img/user-guide-subjects/Snipaste_2023-07-30_13-55-26.png)
 
-- 1：输入条目原生名称回车搜索，原始名称一般都是日文的；
-- 2：输入条目中文名称回车搜索；
-- 3：筛选条件，是否条目是否属于`NSFW`（Not Safe/Suitable For Work），
-     关于什么是`NSFW`请看：<https://mzh.moegirl.org.cn/NSFW> ；
-- 4：筛选条件，条目所属类型，是动画还是其它的什么；
-- 5：打开`条目同步弹框`；
-- 6：前往`新增条目页`；
-- 7：单个条目卡片，上方是条目原始名称，下方是条目的封面，点击前往对应`条目详情页`；
+- 1: Enter the original subject name and press Enter to search. The original name is generally in Japanese.
+- 2: Enter the Chinese subject name and press Enter to search.
+- 3: Filter whether the subject belongs to `NSFW` (Not Safe/Suitable For Work). Learn more about `NSFW` [here](https://mzh.moegirl.org.cn/NSFW).
+- 4: Filter by the type the subject belongs to, whether it's an animation or something else.
+- 5: Open the `Subject Sync Dialog`.
+- 6: Go to the `Add Subject Page`.
+- 7: Individual subject card. The top displays the original subject name, and the bottom displays the subject cover. Click to go to the corresponding `Subject Details Page`.
 
-## 条目同步弹框
+## Subject Sync Dialog
 
 ![Ikaros Console Subject Manager](/img/user-guide-subjects/Snipaste_2023-07-30_14-05-25.png)
 
-点击弹框外部区域或者X可以关闭弹框，如果没有启动任何条目同步的实现插件，这里会提示对应的信息，而不是有可以选择的选择框和输入框。
+Clicking outside the dialog or the X can close it. If no subject synchronization implementation plugins are started, it will display a corresponding message instead of selectable options and input fields.
 
-## 新增条目页
+## Add Subject Page
 
 ![Ikaros Console Subject Manager](/img/user-guide-subjects/Snipaste_2023-07-30_14-10-02.png)
 
-- 1：点击打开`文件选择弹框`；
-- 2：点击打开`添加剧集弹框`；
-- 3：点击`创建`按钮提交；
+- 1: Click to open the `File Selection Dialog`.
+- 2: Click to open the `Add Episode Dialog`.
+- 3: Click the `Create` button to submit.
 
-### 文件选择弹框
+### File Selection Dialog
 
 ![Ikaros Console Subject Manager](/img/user-guide-subjects/Snipaste_2023-07-30_14-13-50.png)
 
-点击单行选中，选中的行背景色会和其它行不同，
-选中一个文件后，点击确认，会将文件的URL填充到 `条目封面` 这个输入框内。
+Click to select a single row. The selected row will have a different background color from the others. After selecting a file, click Confirm to fill the file URL into the `Subject Cover` input field.
 
 :::tip
-此时数据并未保存到服务端数据库里，需要等点击`创建`按钮一起提交。
+At this point, the data is not saved to the server's database. You need to click the `Create` button to submit it together.
 :::
 
-### 添加剧集弹框
+### Add Episode Dialog
 
 ![Ikaros Console Subject Manager](/img/user-guide-subjects/Snipaste_2023-07-30_14-16-14.png)
 
-输入对应的内容，点击确认后，会在 `剧集` 表格里新增一条记录。
+Enter the corresponding content. After clicking Confirm, a new record will be added to the `Episodes` table.
 
 :::tip
-此时数据并未保存到服务端数据库里，需要等点击`创建`按钮一起提交。
+At this point, the data is not saved to the server's database. You need to click the `Create` button to submit it together.
 :::
 
-## 条目详情页
+## Subject Details Page
 
 ![Ikaros Console Subject Manager](/img/user-guide-subjects/Snipaste_2023-07-30_14-20-03.png)
 
-- 1：前往条目编辑页，类似新增条目页，只是数据自动填充了，可以进行修改，并提交更新；
-- 2：删除当前条目；
-- 3：条目封面、信息、剧集展示；
-- 4：条目`InfoBox`展示；
-- 5：点击打开文件多选弹框，确认后会和选中的文件进行批量匹配剧集序号，批量匹配的规则是：正则匹配 `XXX[08]XXXX.XXX` 和 `XXXX 08 XXXX.XXX`；
-- 6：点击打开文件剧集详情弹框，另外双击当前剧集行也可打开文件剧集详情弹框；
-- 7：点击打开文件单选框，进行单个剧集和资源的匹配，如果匹配后，按钮图标将更新为 勾；
+- 1: Go to the subject edit page. It is similar to the add subject page, but the data is automatically filled. You can modify it and submit the update.
+- 2: Delete the current subject.
+- 3: Display of subject cover, information, and episodes.
+- 4: Display of the subject's `InfoBox`.
+- 5: Click to open the multi-select dialog for files. After confirming, it will batch match episode numbers with the selected files. The batch matching rule is: regex match `XXX[08]XXXX.XXX` and `XXXX 08 XXXX.XXX`.
+- 6: Click to open the file episode details dialog. Additionally, double-clicking the current episode row will also open the file episode details dialog.
+- 7: Click to open the file single select dialog, and match individual episodes with resources. If matched, the button icon will update to a checkmark.

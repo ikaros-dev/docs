@@ -1,55 +1,55 @@
 ---
-title: 目录
-description: 目录管理相关功能说明
+title: Folders
+description: Functions related to folder management
 ---
 
-## 管理主面板
+## Management Dashboard
 
 ![Ikaros Console Foldes](/img/user-guide-foldes/Snipaste_2023-07-30_17-55-01.png)
 
-- 1：打开右边的文件上传抽屉；
-- 2：打开新建目录弹框；
-- 3：粘贴选中文件到选中目录；
-- 4：删除选中目录，要求目录里不能有文件或者目录；
-- 5：当前目录路径；
-- 6：目录列表；
-- 7：单行目录；
-- 8：文件列表；
-- 9：单行文件，双击打开左边文件详情抽屉；
+- 1: Open the right file upload drawer.
+- 2: Open the new folder dialog.
+- 3: Paste selected files into the selected folder.
+- 4: Delete the selected folder. The folder must not contain any files or subfolders.
+- 5: Current folder path.
+- 6: List of folders.
+- 7: Single row of folder.
+- 8: List of files.
+- 9: Single row of file. Double-click to open the left file details drawer.
 
 :::tip
-`/root/cover`目录的文件请不要随便删除，这个里面基本都是条目数据的封面文件。
+Please do not delete files in the `/root/cover` directory, as these are mostly cover files for entry data.
 :::
 
-## 选中的目录
+## Selected Folder
 
-单击目录行，选中目录，选中的目录行背景颜色和其它行不同，如果没有单击目录行操作，则选中的目录为当前目录的父目录。
+Click on a folder row to select it. The selected folder's background color will be different from other rows. If no folder row is clicked, the selected folder will be the parent folder of the current folder.
 
-选中的目录只有一个。
+There can only be one selected folder.
 
-## 选中的文件
+## Selected Files
 
-勾选文件列表每行最左边的选择框，即为选中的文件。
+Check the checkbox on the far left of each row in the file list to select files.
 
-选中的文件有一个或者多个。
+There can be one or more selected files.
 
-## 新建目录弹框
+## New Folder Dialog
 
 ![Ikaros Console Foldes](/img/user-guide-foldes/Snipaste_2023-07-30_18-01-36.png)
 
-提交后会创建指定父级目录的子目录。
+After submission, a subfolder of the specified parent folder will be created.
 
-## 右边文件上传抽屉
+## Right File Upload Drawer
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_13-46-04.png)
 
-## 左边文件详情抽屉
+## Left File Details Drawer
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_13-48-50.png)
 
-- 上方文件预留区域：可以预览一些常用图片和视频文件格式，暂不支持预览其它文件格式；
-- 下方文件详情区域：展示了文件的一些详情信息；
+- Upper area for file preview: You can preview some commonly used image and video file formats. Preview of other file formats is not supported at the moment.
+- Lower area for file details: Displays some detailed information about the file.
 
-文件名称处，鼠标双击文件名称，可以修改文件名称，修改完后鼠标点下其它地方保存名称。
+For the file name, double-click it to modify the file name. After modification, click elsewhere to save the name.
 
 ![Ikaros Console File Manager](/img/user-guide-files/Snipaste_2023-07-30_17-45-37.png)

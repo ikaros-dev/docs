@@ -13,9 +13,9 @@ slug: /
     </a>
 </p>
 
-<p align="center"><b>Ikaros</b> [Ίκαρος]，专注于ACGMN的个人内容管家(CMS)。</p>
+<p align="center"><b>Ikaros</b> [Ίκαρος], focuses on being a personal Content Management System (CMS) for ACGMN.</p>
 
-<p align="center">ACGMN全拼是：Anime(动画) + Comic(漫画) + Game(游戏) + Music(音乐) + Novel(小说)</p>
+<p align="center">ACGMN stands for: Anime + Comic + Game + Music + Novel</p>
 
 <p align="center">
 <a href="https://github.com/ikaros-dev/ikaros/releases"><img alt="Github Releases" src="https://img.shields.io/github/v/release/ikaros-dev/ikaros?include_prereleases&style=flat-square" /></a>
@@ -29,7 +29,7 @@ slug: /
 
 ---
 
-## 快速开始
+## Quick Start
 
 ```bash
 docker run \
@@ -42,35 +42,35 @@ docker run \
   --ikaros.security.initializer.master-password=tomoki
 ```
 
-控制台的路径是 `/console` 。
-默认端口是`9999`，默认用户名密码是通过上述两个参数控制的，
-如没有用这两个参数启动，则默认的用户名是 `tomoki`，密码在打印在日志里(只有首次运行会打印密码)。
+The console path is `/console`.
+The default port is `9999`, and the default username and password are controlled by the above two parameters. If not specified, the default username is `tomoki`, and the password will be printed in the logs (only printed on the first run).
 
-以上仅作为体验使用，详细部署文档请查阅：[使用 Docker Compose 部署](./getting-started/install/docker-compose.md)
+The above is for demonstration purposes only. For detailed deployment instructions, please refer to: [Deploying with Docker Compose](./getting-started/install/docker-compose.md)
 
-## 插件
+## Plugins
 
-插件汇总在这个仓库：<https://github.com/ikaros-dev/awesome>
+A collection of plugins can be found in this repository: <https://github.com/ikaros-dev/awesome>
 
-## 视频
+## Videos
 
-- 安装视频：<https://www.bilibili.com/video/BV1zr4y1R7aQ/>
-- 项目介绍视频：<https://www.bilibili.com/video/BV1K841167Sz/>
+- Installation Video: <https://www.bilibili.com/video/BV1zr4y1R7aQ/>
+- Project Introduction Video: <https://www.bilibili.com/video/BV1K841167Sz/>
 
-## 简要帮助
+## Brief Help
 
-- 打开全局搜索是按键盘 `Ctrl` + `K` .
+- To open global search, press `Ctrl` + `K`.
 
-## 许可证
+## License
 
 [![license](https://img.shields.io/github/license/ikaros-dev/ikaros.svg?style=flat-square)](https://github.com/ikaros-dev/ikaros/blob/master/LICENSE)
 
-ikaros 使用 AGPL-v3.0 协议开源，请遵守开源协议。
+Ikaros is open-sourced under the AGPL-v3.0 license. Please comply with the open-source license.
 
-## 贡献
+## Contribution
 
-参考 [CONTRIBUTING](https://github.com/ikaros-dev/ikaros/blob/master/CONTRIBUTING.MD)。
-
-## 状态
+Refer to [CONTRIBUTING](https://github.com/ikaros-dev/ikaros/blob/master/CONTRIBUTING.MD).
+ 
+## Status
 
 ![Repobeats analytics](https://repobeats.axiom.co/api/embed/f7285853048ff09f313f6483901e2af0e638f666.svg "Repobeats analytics image")
+

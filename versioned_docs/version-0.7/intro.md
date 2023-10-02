@@ -9,7 +9,7 @@ slug: /
 
 <p align="center">
     <a href="https://ikaros.run" target="_blank" rel="noopener noreferrer">
-        <img width="100" src="https://ikaros.run/logo.png" alt="Ikaros logo" />
+        <img width="100" src="/img/favicon.ico" alt="Ikaros logo" />
     </a>
 </p>
 
@@ -37,7 +37,7 @@ docker run \
   --name ikaros \
   -p 9999:9999 \
   -v ~/.ikaros:/root/.ikaros \
-  ikarosrun/ikaros:v0.7.4 \
+  ikarosrun/ikaros:v0.7.5 \
   --ikaros.security.initializer.master-username=tomoki \
   --ikaros.security.initializer.master-password=tomoki
 ```

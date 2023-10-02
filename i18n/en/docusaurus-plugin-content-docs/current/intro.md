@@ -9,7 +9,7 @@ slug: /
 
 <p align="center">
     <a href="https://ikaros.run" target="_blank" rel="noopener noreferrer">
-        <img width="100" src="https://ikaros.run/logo.png" alt="Ikaros logo" />
+        <img width="100" src="src="/img/favicon.ico"" alt="Ikaros logo" />
     </a>
 </p>
 

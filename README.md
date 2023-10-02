@@ -28,15 +28,15 @@ This command generates static content into the `build` directory and can be serv
 
 ### publish docs version
 
-run commad to package version 0.6 docs
+run commad to package version 0.x docs
 
 ```
-yarn docusaurus docs:version 0.6
+yarn docusaurus docs:version 0.x
 ```
 
 add i18n version `version-vx.x.json` file in dir `i18n/en/docusaurus-plugin-content-docs`
+add i18n version `version-vx.x.json` file in dir `i18n/zh/docusaurus-plugin-content-docs`
 
-add version num in x.x `versions.json`
 
 ### generate i18n json config
 

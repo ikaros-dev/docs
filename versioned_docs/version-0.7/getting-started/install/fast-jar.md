@@ -9,17 +9,7 @@ import DockerArgs from "./slots/docker-args.md"
 
 去`GitHub`的`Release`页`Assets`处下载`jar`包: <https://github.com/ikaros-dev/ikaros/releases>
 
-
-打`Fast Jar`包，在项目根目录运行下方命令
-```shell
-# linux
-./gradlew clean bootJar -x test
-# windows
-./gradlew.bat clean bootJar -x test
-```
-打包后的文件在`server/build/libs/`目录下
-
-在打包文件所在目录，`Linux` 运行
+在`Jar`文件所在目录，`Linux` 运行
 ```shell
 java -jar ./ikaros-server.jar
 ```

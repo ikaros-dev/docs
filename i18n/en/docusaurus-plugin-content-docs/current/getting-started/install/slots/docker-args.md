@@ -4,8 +4,8 @@
 | `spring.r2dbc.username`                       | Database username                                                     |
 | `spring.r2dbc.password`                       | Database password                                                     |
 | `spring.sql.init.platform`                    | Database platform name, supports `postgresql`, `h2`                   |
-| `ikaros.security.initializer.master-username` | Initial superuser username                                             |
-| `ikaros.security.initializer.master-password` | Initial superuser password                                             |
+| `ikaros.security.initializer.master-username` | Initial superuser username, default `tomoki`                                             |
+| `ikaros.security.initializer.master-password` | Initial superuser password, the first run of the program is printed in the log.                                             |
 
 Database Configuration:
 

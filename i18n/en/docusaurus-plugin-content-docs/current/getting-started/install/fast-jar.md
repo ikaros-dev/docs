@@ -29,3 +29,7 @@ In the directory where the packaged file is located, for running on Windows, you
 ```shell
 java -jar ikaros-server.jar --spring.profiles.active=win 
 ```
+
+Parameter Details:
+
+  <DockerArgs />

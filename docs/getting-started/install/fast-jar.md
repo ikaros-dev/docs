@@ -3,6 +3,8 @@ title: 使用 Fast Jar 部署
 description: 使用 Fast Jar 部署
 ---
 
+import DockerArgs from "./slots/docker-args.md"
+
 需要有`Java17`的运行环境
 
 去`GitHub`的`Release`页`Assets`处下载`jar`包: <https://github.com/ikaros-dev/ikaros/releases>
@@ -27,3 +29,7 @@ java -jar ./ikaros-server.jar
 ```shell
 java -jar ikaros-server.jar --spring.profiles.active=win 
 ```
+
+参数详解：
+
+  <DockerArgs />

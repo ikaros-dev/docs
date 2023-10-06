@@ -76,3 +76,4 @@ ikaros 使用 AGPL-v3.0 协议开源，请遵守开源协议。
 ![Repobeats analytics](https://repobeats.axiom.co/api/embed/f7285853048ff09f313f6483901e2af0e638f666.svg "Repobeats analytics image")
 
 [![Stargazers over time](https://starchart.cc/ikaros-dev/ikaros.svg)](https://starchart.cc/ikaros-dev/ikaros)
+

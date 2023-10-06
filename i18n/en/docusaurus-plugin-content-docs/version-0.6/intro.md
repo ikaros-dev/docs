@@ -13,7 +13,7 @@ slug: /
     </a>
 </p>
 
-<p align="center"><b>Ikaros</b> [Ίκαρος], focuses on being a personal Content Management System (CMS) for ACGMN.</p>
+<p align="center"><b>Ikaros</b> [Ίκαρος], Dedicated to ACGMN's Content Management System (CMS).</p>
 
 <p align="center">ACGMN stands for: Anime + Comic + Game + Music + Novel</p>
 

@@ -25,7 +25,7 @@ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### publish docs version
+### Archive docs version
 
 run commad to package version 0.x docs
 

@@ -314,5 +314,11 @@
   },
   "index.main.feature.6.tagline": {
     "message": "支持主流云端的加密分段备份，在保障数据安全的前提下将云端的优势利用起来"
+  },
+  "versionsPage.versionEntry.link": {
+    "message": "Documentation"
+  },
+  "versionsPage.versionEntry.releaseNotes": {
+    "message": "Release Notes"
   }
 }

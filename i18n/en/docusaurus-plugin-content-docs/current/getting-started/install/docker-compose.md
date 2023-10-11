@@ -25,12 +25,12 @@ Available Docker images for Ikaros:
 - [ikarosrun/ikaros](https://hub.docker.com/r/ikarosrun/ikaros)
 
 :::info Note
-Currently, Ikaros has not updated the Docker image with the `latest` tag, mainly because no official version has been released yet. We recommend using specific version tags, such as `ikarosrun/ikaros:v0.7.5`.
+Currently, Ikaros has not updated the Docker image with the `latest` tag, mainly because no official version has been released yet. We recommend using specific version tags, such as `ikarosrun/ikaros:v0.8.0`.
 
-- `ikarosrun/ikaros:v0.7.5`: Represents the latest available image. A new image is built for each release based on GitHub tags.
+- `ikarosrun/ikaros:v0.8.0`: Represents the latest available image. A new image is built for each release based on GitHub tags.
 - `ikarosrun/ikaros:dev`: Represents the image in development. It is not recommended for use, as it is rebuilt and overwritten with each merged Pull Request into the main branch.
 
-Subsequent documentation will use `ikarosrun/ikaros:v0.7.5` as an example.
+Subsequent documentation will use `ikarosrun/ikaros:v0.8.0` as an example.
 :::
 
 1. Create a folder anywhere in the system. This document uses `~/ikaros` as an example.
@@ -53,7 +53,7 @@ Subsequent documentation will use `ikarosrun/ikaros:v0.7.5` as an example.
     services:
         # ikaros
         ikaros:
-            image: ikarosrun/ikaros:v0.7.5
+            image: ikarosrun/ikaros:v0.8.0
             container_name: ikaros
             restart: on-failure:3
             depends_on:
@@ -124,7 +124,7 @@ Subsequent documentation will use `ikarosrun/ikaros:v0.7.5` as an example.
     services:
        # ikaros
       ikaros:
-          image: ikarosrun/ikaros:v0.7.5
+          image: ikarosrun/ikaros:v0.8.0
           container_name: ikaros
           restart: on-failure:3
           networks:
@@ -206,7 +206,7 @@ If not started with these parameters, the default username is `tomoki`, and the 
   ```yaml {3}
   services:
     ikaros:
-      image: ikarosrun/ikaros:v0.7.5
+      image: ikarosrun/ikaros:v0.8.0
       container_name: ikaros
   ```
 

@@ -59,6 +59,7 @@ const sidebars = {
         "user-guide/plugins",
         "user-guide/settings",
         "user-guide/users",
+        "user-guide/collections",
         "user-guide/faq"
       ]
     },

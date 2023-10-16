@@ -1,0 +1,14 @@
+{
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "Getting Start"
+  },
+  "sidebar.docsSidebar.category.getting-started-install": {
+    "message": "Install"
+  },
+  "sidebar.docsSidebar.category.plugins": {
+    "message": "Plugins"
+  },
+  "sidebar.docsSidebar.category.user-guide": {
+    "message": "User Guide"
+  }
+}

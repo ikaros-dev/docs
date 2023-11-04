@@ -33,15 +33,19 @@ run commad to package version 0.x docs
 yarn docusaurus docs:version 0.x
 ```
 
-add i18n version `version-vx.x.json` file in dir `i18n/en/docusaurus-plugin-content-docs`
-add i18n version `version-vx.x.json` file in dir `i18n/zh/docusaurus-plugin-content-docs`
-
-
 ### generate i18n json config
 
 ```
 yarn write-translations --locale zh
+yarn write-translations --locale en
 ```
+
+### update version json
+
+add i18n version `version-vx.x.json` file in dir `i18n/en/docusaurus-plugin-content-docs` if not exists
+add i18n version `version-vx.x.json` file in dir `i18n/zh/docusaurus-plugin-content-docs` if not exists
+
+and then update them content `version.label.message` to correct version if it incorrect.
 
 ### build i18n dist 
 

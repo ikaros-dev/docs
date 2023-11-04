@@ -41,8 +41,8 @@ const config = {
           editLocalizedFiles: true,
           // versions: {
           //   current: {
-          //     label: "0.7-SNAPSHOT",
-          //     path: "0.7-SNAPSHOT",
+          //     label: "0.12",
+          //     path: "0.12",
           //   },
           // },
         },

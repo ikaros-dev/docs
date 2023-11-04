@@ -30,12 +30,12 @@ Available Docker images for Ikaros:
 - [ikarosrun/ikaros](https://hub.docker.com/r/ikarosrun/ikaros)
 
 :::info Note
-Currently, Ikaros has not updated the Docker image with the `latest` tag, mainly because no official version has been released yet. We recommend using specific version tags, such as `ikarosrun/ikaros:v0.9.0`.
+Currently, Ikaros has not updated the Docker image with the `latest` tag, mainly because no official version has been released yet. We recommend using specific version tags, such as `ikarosrun/ikaros:v0.11.5`.
 
-- `ikarosrun/ikaros:v0.9.0`: Represents the latest available image. A new image is built for each release based on GitHub tags.
+- `ikarosrun/ikaros:v0.11.5`: Represents the latest available image. A new image is built for each release based on GitHub tags.
 - `ikarosrun/ikaros:dev`: Represents the image in development. It is not recommended for use, as it is rebuilt and overwritten with each merged Pull Request into the main branch.
 
-Subsequent documentation will use `ikarosrun/ikaros:v0.9.0` as an example.
+Subsequent documentation will use `ikarosrun/ikaros:v0.11.5` as an example.
 :::
 
 1. Create a Container
@@ -46,7 +46,7 @@ Subsequent documentation will use `ikarosrun/ikaros:v0.9.0` as an example.
         --name ikaros \
         -p 9999:9999 \
         -v ~/.ikaros:/root/.ikaros \
-        ikarosrun/ikaros:v0.9.0 \
+        ikarosrun/ikaros:v0.11.5 \
         --ikaros.security.initializer.master-username=tomoki \
         --ikaros.security.initializer.master-password=tomoki
     ```
@@ -74,10 +74,10 @@ Subsequent documentation will use `ikarosrun/ikaros:v0.9.0` as an example.
 
 ## Upgrade Version
 
-1. Pull the new version image (please choose the latest tag and replace `v0.9.0` below)
+1. Pull the new version image (please choose the latest tag and replace `v0.11.5` below)
 
   ```bash
-  docker pull ikarosrun/ikaros:v0.9.0
+  docker pull ikarosrun/ikaros:v0.11.5
   ```
 
 2. Stop the running container
@@ -105,7 +105,7 @@ Subsequent documentation will use `ikarosrun/ikaros:v0.9.0` as an example.
         --name ikaros \
         -p 9999:9999 \
         -v ~/.ikaros:/root/.ikaros \
-        ikarosrun/ikaros:v0.9.0 \
+        ikarosrun/ikaros:v0.11.5 \
         --ikaros.security.initializer.master-username=tomoki \
         --ikaros.security.initializer.master-password=tomoki
     ```

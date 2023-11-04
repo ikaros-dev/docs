@@ -59,7 +59,7 @@ A collection of plugins can be found in this repository: <https://github.com/ika
 
 ## Brief Help
 
-- To open global search, press `Ctrl` + `K`.
+- To open global search, press `Ctrl` + `/`.
 
 ## License
 

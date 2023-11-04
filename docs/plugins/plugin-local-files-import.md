@@ -32,7 +32,10 @@ description: 本地导入插件说明
 
 #### 硬链接方式导入（推荐）
 
-<待上传B站视频URL>
+<https://www.bilibili.com/video/BV1Yw411M7pN/>
+
+<iframe src="//player.bilibili.com/player.html?aid=277979450&bvid=BV1Yw411M7pN&cid=1318107297&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width='100%' height='600px'> </iframe>
+
 
 #### 移动方式导入
 

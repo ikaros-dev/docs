@@ -9,15 +9,15 @@
   },
   "item.label.Offical": {
     "message": "Official",
-    "description": "Navbar item with label Official"
+    "description": "Navbar item with label Offical"
   },
   "item.label.Docs": {
     "message": "Guides",
-    "description": "Navbar item with label Guides"
+    "description": "Navbar item with label Docs"
   },
   "item.label.Blog": {
     "message": "Release",
-    "description": "Navbar item with label Release"
+    "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
     "message": "GitHub",

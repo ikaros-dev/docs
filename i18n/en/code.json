@@ -269,7 +269,7 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  }, 
+  },
   "index.header.title": {
     "message": "Ikaros Documentation"
   },
@@ -314,5 +314,11 @@
   },
   "index.main.feature.6.tagline": {
     "message": "Supports encrypted segmented backup on mainstream cloud platforms. Utilize the advantages of the cloud while ensuring data security."
+  },
+  "versionsPage.versionEntry.link": {
+    "message": "Documentation"
+  },
+  "versionsPage.versionEntry.releaseNotes": {
+    "message": "Release Notes"
   }
 }

@@ -1,14 +1,22 @@
 {
   "sidebar.docsSidebar.category.getting-started": {
-    "message": "Getting Start"
+    "message": "Getting Start",
+    "description": "The label for category getting-started in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.getting-started-install": {
-    "message": "Install"
+    "message": "Install",
+    "description": "The label for category getting-started-install in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.plugins": {
-    "message": "Plugins"
+    "message": "Plugins",
+    "description": "The label for category plugins in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.user-guide": {
-    "message": "User Guide"
+    "message": "User Guide",
+    "description": "The label for category user-guide in sidebar docsSidebar"
+  },
+  "version.label": {
+    "message": "0.7",
+    "description": "The label for version 0.7"
   }
 }

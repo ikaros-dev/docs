@@ -9,6 +9,8 @@ const config = {
   title: 'Ikaros Docs',
   tagline: 'Docs site for project ikaros.',
   favicon: 'img/favicon.ico',
+  organizationName: 'ikaros-dev',
+  projectName: 'ikaros',
 
   // Set the production url of your site here
   url: 'https://docs.ikaros.run',

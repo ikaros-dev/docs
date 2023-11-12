@@ -55,6 +55,7 @@ const config = {
           editUrl:
             'https://github.com/ikaros-dev/docs/edit/master/',
           editLocalizedFiles: true,
+          blogSidebarCount: 10,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

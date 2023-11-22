@@ -55,7 +55,6 @@ A collection of plugins can be found in this repository: <https://github.com/ika
 
 - Feature Preview video: <https://www.bilibili.com/video/BV1Uw411B7o6/>
 - Installation Video: <https://www.bilibili.com/video/BV1zr4y1R7aQ/>
-- Project Introduction Video: <https://www.bilibili.com/video/BV1K841167Sz/>
 
 ## Brief Help
 

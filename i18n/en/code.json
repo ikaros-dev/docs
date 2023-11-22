@@ -310,10 +310,10 @@
     "message": "Clients for various mainstream platforms, including but not limited to Windows and Android."
   },
   "index.main.feature.6.title": {
-    "message": "File Encryption and Cloud Upload in Segments"
+    "message": "Unscanned disk"
   },
   "index.main.feature.6.tagline": {
-    "message": "Supports encrypted segmented backup on mainstream cloud platforms. Utilize the advantages of the cloud while ensuring data security."
+    "message": "Disk scanning applications often occupy system I/O abnormally, affecting the normal running of other applications. ikaros does not actively scan disks."
   },
   "versionsPage.versionEntry.link": {
     "message": "Documentation"

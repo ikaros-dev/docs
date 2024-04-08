@@ -118,14 +118,6 @@ const config = {
                 label: "GitHub Organization",
                 href: "https://github.com/ikaros-dev",
               },
-              {
-                label: "Docs Access Analysis",
-                href: "https://analytics.ikaros.run/share/HpFEzaaekV9NOCZn/ikaros%20docs",
-              },
-              {
-                label: "Server Status",
-                href: "https://status.ikaros.run/status/ikaros",
-              },
             ],
           },
           {
@@ -159,14 +151,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  scripts: [
-    {
-      src: "https://analytics.ikaros.run/script.js",
-      async: true,
-      defer: true,
-      "data-website-id": "3266d477-7c25-4d81-9787-15390a98c4d3",
-    },
-  ],
 };
 
 module.exports = config;

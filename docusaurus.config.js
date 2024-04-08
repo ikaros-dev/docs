@@ -115,25 +115,26 @@ const config = {
                 href: "https://ikaros.run",
               },
               {
-                label: "GitHub Organization",
-                href: "https://github.com/ikaros-dev",
+                label: "WeChat Channel",
+                href: "https://ikaros.run/wechat.png",
+              },
+              {
+                label: "Telegram Channel",
+                href: "https://t.me/run_ikaros_channel",
               },
             ],
           },
           {
             title: "Community",
             items: [
-              {
-                label: "WeChat Channel",
-                href: "https://ikaros.run/wechat.png",
-              },
+             
               {
                 label: "GitHub Issues",
                 href: "https://github.com/ikaros-dev/ikaros/issues",
               },
               {
-                label: "Telegram Channel",
-                href: "https://t.me/run_ikaros_channel",
+                label: "GitHub Organization",
+                href: "https://github.com/ikaros-dev",
               },
               {
                 label: "Telegram Group",

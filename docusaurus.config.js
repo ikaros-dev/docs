@@ -140,6 +140,10 @@ const config = {
                 label: "Telegram Group",
                 href: "https://t.me/run_ikaros",
               },
+              {
+                label: "QQ Chat Group",
+                href: "https://qm.qq.com/q/ogGuO2wmcw",
+              },
             ],
           },
         ],

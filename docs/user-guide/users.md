@@ -1,5 +1,5 @@
 ---
-title: 用户
+title: 个人
 description: 用户相关功能说明
 ---
 

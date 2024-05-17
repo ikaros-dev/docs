@@ -53,8 +53,7 @@ const sidebars = {
       },
       "items": [
         "user-guide/common",
-        "user-guide/files",
-        "user-guide/foldes",
+        "user-guide/attachments",
         "user-guide/subjects",
         "user-guide/plugins",
         "user-guide/settings",

@@ -35,6 +35,10 @@
     "message": "电报群",
     "description": "The label of footer link with label=Telegram Group linking to https://t.me/run_ikaros"
   },
+  "link.item.label.QQ Chat Group": {
+    "message": "QQ交流群",
+    "description": "The label of footer link with label=QQ Chat Group linking to https://qm.qq.com/q/ogGuO2wmcw"
+  },
   "link.item.label.GitHub Issues": {
     "message": "GitHub Issues",
     "description": "The label of footer link with label=GitHub Issues linking to https://github.com/ikaros-dev/ikaros/issues"

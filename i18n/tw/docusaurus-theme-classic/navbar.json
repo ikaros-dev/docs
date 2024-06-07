@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Ikaros 文档",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Ikaros Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Offical": {
+    "message": "官网",
+    "description": "Navbar item with label Offical"
+  },
+  "item.label.Docs": {
+    "message": "指南",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "link.title.About": {
+    "message": "关于",
+    "description": "The title of the footer links column with title=About in the footer"
+  },
+  "link.item.label.Offical": {
+    "message": "官网",
+    "description": "The label of footer link with label=Offical linking to https://ikaros.run"
+  },
+  "link.item.label.GitHub Organization": {
+    "message": "GitHub 组织",
+    "description": "The label of footer link with label=GitHub Organization linking to https://github.com/ikaros-dev"
+  },
+  "link.item.label.Docs Access Analysis": {
+    "message": "文档访问统计",
+    "description": "The label of footer link with label=Docs Access Analysis linking to https://analytics.ikaros.run/share/HpFEzaaekV9NOCZn/ikaros%20docs"
+  },
+  "link.item.label.Server Status": {
+    "message": "服务状态",
+    "description": "The label of footer link with label=Server Status linking to https://status.ikaros.run/status/ikaros"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.WeChat Channel": {
+    "message": "微信公众号",
+    "description": "The label of footer link with label=WeChat Channel linking to https://ikaros.run/wechat.png"
+  },
+  "link.item.label.Telegram Channel": {
+    "message": "电报频道",
+    "description": "The label of footer link with label=Telegram Channel linking to https://t.me/run_ikaros_channel"
+  },
+  "link.item.label.Telegram Group": {
+    "message": "电报群",
+    "description": "The label of footer link with label=Telegram Group linking to https://t.me/run_ikaros"
+  },
+  "link.item.label.QQ Chat Group": {
+    "message": "QQ交流群",
+    "description": "The label of footer link with label=QQ Chat Group linking to https://qm.qq.com/q/ogGuO2wmcw"
+  },
+  "link.item.label.GitHub Issues": {
+    "message": "GitHub Issues",
+    "description": "The label of footer link with label=GitHub Issues linking to https://github.com/ikaros-dev/ikaros/issues"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 <a href=\"https://github.com/ikaros-dev\" target=\"_blank\">Ikaros Developer</a>. \n        Built with <a href=\"https://docusaurus.io/\" target=\"_blank\">Docusaurus</a>.<br />\n        China ICP Number: <a href=\"http://beian.miit.gov.cn/publish/query/indexFirst.action\" target=\"_blank\">赣ICP备19013362号-4</a>",
+    "description": "The footer copyright"
+  }
+}

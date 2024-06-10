@@ -74,7 +74,8 @@ const sidebars = {
         "plugins/plugin-local-files-import",
         "plugins/plugin-jellyfin",
         "plugins/plugin-mikan",
-        "plugins/plugin-baidupan"
+        "plugins/plugin-baidupan",
+        "plugins/plugin-alist"
       ]
     },
     "about"

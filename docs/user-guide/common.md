@@ -43,6 +43,8 @@ Ikaros 作为一款强大的ACGMN内容管理器，配合上不同的模板与�
 目前可以获取插件：Awesome Ikaros：<https://github.com/ikaros-dev/awesome>
 :::
 
+您需要去对应的仓库`release`下获取对应的插件安装用`jar`包文件，由于可能都是发布的`pre-release`, 主页查看 `release`区域不会显示有包，需要点击`release`进去看对应发布的详情。
+
 ### 版本适配规则
 
 插件的大版本和小版本和本体保持相同，

@@ -142,7 +142,7 @@ const config = {
               },
               {
                 label: "QQ Chat Group",
-                href: "https://qm.qq.com/q/ogGuO2wmcw",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=78drHnTdkaGQHwAkt1eEU3JpxBfUeuPx&authKey=dvZ0CdZjiX36wKiDlDF0qKVcEDe7SNXfL%2BllKTIf%2FgiXNHwlWqTmlXTs%2BtLnB1un&noverify=0&group_code=413528874",
               },
             ],
           },

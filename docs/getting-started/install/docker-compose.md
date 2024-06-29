@@ -92,6 +92,7 @@ import DockerArgs from "./slots/docker-args.md"
               - --spring.r2dbc.password=openpostgresql
               # Flayway
               - --spring.flyway.url=jdbc:postgresql://ikaros_database/ikaros
+              - --spring.flyway.locations=classpath:db/postgresql/migration
               - --spring.flyway.user=ikaros
               - --spring.flyway.password=openpostgresql
               # 初始化的超级管理员用户名

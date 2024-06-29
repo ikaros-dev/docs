@@ -90,7 +90,6 @@ import DockerArgs from "./slots/docker-args.md"
               - --spring.r2dbc.username=ikaros
               # PostgreSQL 的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致。
               - --spring.r2dbc.password=openpostgresql
-              - --spring.sql.init.platform=postgresql
               # Flayway
               - --spring.flyway.url=jdbc:postgresql://ikaros_database/ikaros
               - --spring.flyway.user=ikaros

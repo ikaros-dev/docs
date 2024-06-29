@@ -37,7 +37,7 @@ docker run \
   --name ikaros \
   -p 9999:9999 \
   -v ~/.ikaros:/root/.ikaros \
-  ikarosrun/ikaros:v0.12.0 \
+  ikarosrun/ikaros:v0.13.0 \
   --ikaros.security.initializer.master-username=tomoki \
   --ikaros.security.initializer.master-password=tomoki
 ```
@@ -60,7 +60,7 @@ docker run \
 
 ## 简要帮助
 
-- 打开全局搜索是按键盘 `Ctrl` + `K` .
+- 打开全局搜索是按键盘 `Ctrl` + `/` .
 
 ## 许可证
 

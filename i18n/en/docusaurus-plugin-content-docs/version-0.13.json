@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "0.13",
+    "description": "The label for version 0.13"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "getting-started",
+    "description": "The label for category getting-started in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.getting-started-install": {
+    "message": "getting-started-install",
+    "description": "The label for category getting-started-install in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.user-guide": {
+    "message": "user-guide",
+    "description": "The label for category user-guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.plugins": {
+    "message": "plugins",
+    "description": "The label for category plugins in sidebar docsSidebar"
+  }
+}

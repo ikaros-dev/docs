@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "0.13",
+    "description": "The label for version 0.13"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "入门",
+    "description": "The label for category getting-started in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.getting-started-install": {
+    "message": "安装指南",
+    "description": "The label for category getting-started-install in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.plugins": {
+    "message": "插件",
+    "description": "The label for category plugins in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.user-guide": {
+    "message": "用户指南",
+    "description": "The label for category user-guide in sidebar docsSidebar"
+  }
+}

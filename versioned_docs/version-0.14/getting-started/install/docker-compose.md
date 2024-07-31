@@ -73,7 +73,6 @@ import DockerArgs from "./slots/docker-args.md"
               retries: 5
               start_period: 30s
             environment:
-              # 避免中日文文件名称乱码，需要设置文件编码，先通过命令 [locale -a] 查询下宿主机编码，有的是 [C] 有的是 [zh_CN]，替换下方对应的字符
               - LANG=C.UTF-8
               - LANGUAGE=C:zh
               - LC_ALL=C.UTF-8
@@ -149,7 +148,6 @@ import DockerArgs from "./slots/docker-args.md"
             retries: 5
             start_period: 30s
           environment:
-            # 避免中日文文件名称乱码，需要设置文件编码，先通过命令 [locale -a] 查询下宿主机编码，有的是 [C] 有的是 [zh_CN]，替换下方对应的字符
             - LANG=C.UTF-8
             - LANGUAGE=C:zh
             - LC_ALL=C.UTF-8

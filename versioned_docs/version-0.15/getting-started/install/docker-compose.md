@@ -94,8 +94,8 @@ import DockerArgs from "./slots/docker-args.md"
               - --spring.flyway.locations=classpath:db/postgresql/migration
               - --spring.flyway.user=ikaros
               - --spring.flyway.password=openpostgresql
-              # ikaros
-              - --ikaros.external-url=http(s)://domain.com
+              # ikaros 外部访问地址 需要根据自己的情况进行修改 影响的功能包括不限于API文档等
+              - --ikaros.external-url=http://localhost:9999
               # 初始化的超级管理员用户名
               - --ikaros.security.initializer.master-username=tomoki
               # 初始化的超级管理员密码
@@ -159,8 +159,8 @@ import DockerArgs from "./slots/docker-args.md"
             - --logging.level.run.ikaros.plugin=INFO
             - --logging.level.run.ikaros.jellyfin=INFO
             - --sun.jnu.encoding=UTF-8
-            # ikaros
-            - --ikaros.external-url=http(s)://domain.com
+            # ikaros 外部访问地址 需要根据自己的情况进行修改 影响的功能包括不限于API文档等
+            - --ikaros.external-url=http://localhost:9999
             # 初始化的超级管理员用户名
             - --ikaros.security.initializer.master-username=tomoki
             # 初始化的超级管理员密码

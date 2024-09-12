@@ -6,7 +6,7 @@
 | `spring.sql.init.platform`                     | 数据库平台名称，支持 `postgresql`、`h2` |
 | `ikaros.security.initializer.master-username` | 初始超级管理员用户名, 默认 `tomoki`                                                             |
 | `ikaros.security.initializer.master-password` | 初始超级管理员密码, 第一次运行程序打印在控日志里                                                               |
-| `ikaros.external-url` | 外部访问地址，比如: https://demo.ikaros.run                                                             |
+| `ikaros.external-url` | 外部访问地址，需要根据自己的情况进行修改，影响的功能包括不限于API文档等，比如: https://demo.ikaros.run                                                             |
 
 数据库配置：
 

@@ -39,7 +39,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ikaros-dev/docs/edit/master/',
+            'https://github.com/ikaros-dev/docs/edit/main/',
           editLocalizedFiles: true,
           // versions: {
           //   current: {
@@ -53,7 +53,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ikaros-dev/docs/edit/master/',
+            'https://github.com/ikaros-dev/docs/edit/main/',
           editLocalizedFiles: true,
           blogSidebarCount: 10,
         },

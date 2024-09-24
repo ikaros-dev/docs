@@ -156,6 +156,13 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    scripts: [
+      {
+        src: "https://static.cloudflareinsights.com/beacon.min.js",
+        async: true,
+        "data-website-id": "2540762c286b4802afb217d5b6dd1b6b",
+      }
+    ]
 };
 
 module.exports = config;

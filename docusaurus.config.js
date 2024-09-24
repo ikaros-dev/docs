@@ -122,6 +122,10 @@ const config = {
                 label: "Telegram Channel",
                 href: "https://t.me/run_ikaros_channel",
               },
+              {
+                label: "Ikaros Analytics",
+                href: "https://analytics.ikaros.run/share/s5uHahQNqVtfKoPq/docs.ikaros.run",
+              },
             ],
           },
           {
@@ -158,9 +162,9 @@ const config = {
     }),
     scripts: [
       {
-        src: "https://static.cloudflareinsights.com/beacon.min.js",
+        src: "https://analytics.ikaros.run/script.js",
         async: true,
-        "data-website-id": "2540762c286b4802afb217d5b6dd1b6b",
+        "data-website-id": "32a4e564-ed51-4818-937e-326248ce4691",
       }
     ]
 };

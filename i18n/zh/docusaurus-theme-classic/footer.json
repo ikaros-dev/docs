@@ -31,6 +31,10 @@
     "message": "电报频道",
     "description": "The label of footer link with label=Telegram Channel linking to https://t.me/run_ikaros_channel"
   },
+  "link.item.label.Ikaros Analytics": {
+    "message": "Ikaros数据统计",
+    "description": "Ikaros Web Analytics"
+  },
   "link.item.label.Telegram Group": {
     "message": "电报群",
     "description": "The label of footer link with label=Telegram Group linking to https://t.me/run_ikaros"

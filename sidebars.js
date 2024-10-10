@@ -38,6 +38,7 @@ const sidebars = {
           "items": [
             "getting-started/install/docker-compose",
             "getting-started/install/docker",
+            "getting-started/install/1panel",
             "getting-started/install/fast-jar",
             "getting-started/install/flutter-app"
           ]

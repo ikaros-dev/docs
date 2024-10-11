@@ -44,6 +44,30 @@ import DockerArgs from "./slots/docker-args.md"
 ```
 wget -P /opt/1panel/resource/apps/local https://ghp.ikaros.run/https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
 
+# 检查 unzip 是否安装
+if ! command -v unzip &> /dev/null
+then
+    echo "unzip 未安装，正在安装..."
+
+    # 检测是否为 Ubuntu 系统
+    if [ -f /etc/lsb-release ]; then
+        echo "检测到 Ubuntu 系统，使用 apt 安装 unzip..."
+        sudo apt update
+        sudo apt install -y unzip
+
+    # 检测是否为 CentOS 系统
+    elif [ -f /etc/centos-release ]; then
+        echo "检测到 CentOS 系统，使用 yum 安装 unzip..."
+        sudo yum install -y unzip
+
+    else
+        echo "未知的系统类型，请手动安装 unzip."
+        exit 1
+    fi
+else
+    echo "unzip 已安装."
+fi
+
 unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/localApps.zip
 
 cp -rf /opt/1panel/resource/apps/local/appstore-localApps/apps/* /opt/1panel/resource/apps/local/
@@ -56,6 +80,30 @@ rm -rf /opt/1panel/resource/apps/local/localApps.zip
 国外网络：
 ```
 wget -P /opt/1panel/resource/apps/local https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
+
+# 检查 unzip 是否安装
+if ! command -v unzip &> /dev/null
+then
+    echo "unzip 未安装，正在安装..."
+
+    # 检测是否为 Ubuntu 系统
+    if [ -f /etc/lsb-release ]; then
+        echo "检测到 Ubuntu 系统，使用 apt 安装 unzip..."
+        sudo apt update
+        sudo apt install -y unzip
+
+    # 检测是否为 CentOS 系统
+    elif [ -f /etc/centos-release ]; then
+        echo "检测到 CentOS 系统，使用 yum 安装 unzip..."
+        sudo yum install -y unzip
+
+    else
+        echo "未知的系统类型，请手动安装 unzip."
+        exit 1
+    fi
+else
+    echo "unzip 已安装."
+fi
 
 unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/localApps.zip
 
@@ -78,8 +126,6 @@ rm -rf /opt/1panel/resource/apps/local/localApps.zip
 
 搜索PostgreSQL安装，如已经安装则不用安装，安装好后，
 
-搜索ikaros，选中开放端口外部访问，其它的配置看自己情况修改，然后点击右下角安装即可。
+搜索ikaros，选中`端口外部访问`，修改`管理员用户名`和`管理员密码`，其它的配置看自己情况修改，然后点击右下角安装即可。
 
-点击应用的日志，复制初次生成的用户名密码，
-
-然后浏览器页面输入 `http://{你的服务器ip}:9999/console` 进入控制台，登录页面输入用户名`tomoki`，密码即从日志复制的密码，登录ikaros控制台。
+然后浏览器页面输入 `http://{你的服务器ip}:{你配置的端口号}/console` 进入控制台，输入用户名密码登录ikaros控制台。

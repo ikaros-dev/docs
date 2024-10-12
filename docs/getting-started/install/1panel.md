@@ -21,9 +21,7 @@ import DockerArgs from "./slots/docker-args.md"
 
 ## 视频
 
-
-待三方商店那边PR合并后录制
-
+【ikaros】1Panel安装演示 2024-10-12 01-45-38: <https://www.bilibili.com/video/BV1gt2DYSESc/>
 
 ## 1panel三方应用商店配置
 

@@ -119,8 +119,8 @@ const config = {
                 href: "https://ikaros.run/wechat.png",
               },
               {
-                label: "Telegram Channel",
-                href: "https://t.me/run_ikaros_channel",
+                label: "Ikaros Status",
+                href: "https://status.ikaros.run/status/ikaros",
               },
               {
                 label: "Ikaros Analytics",
@@ -137,8 +137,8 @@ const config = {
                 href: "https://github.com/ikaros-dev/ikaros/issues",
               },
               {
-                label: "GitHub Organization",
-                href: "https://github.com/ikaros-dev",
+                label: "Telegram Channel",
+                href: "https://t.me/run_ikaros_channel",
               },
               {
                 label: "Telegram Group",

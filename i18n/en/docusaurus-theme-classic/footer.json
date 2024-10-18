@@ -33,7 +33,7 @@
   },
   "link.item.label.Ikaros Analytics": {
     "message": "Ikaros Analytics",
-    "description": "Ikaros Web Analytics"
+    "description": "The label of footer link with label=Ikaros Analytics linking to https://analytics.ikaros.run/share/s5uHahQNqVtfKoPq/docs.ikaros.run"
   },
   "link.item.label.Telegram Group": {
     "message": "Telegram Group",
@@ -50,5 +50,9 @@
   "copyright": {
     "message": "Copyright © 2023 <a href=\"https://github.com/ikaros-dev\" target=\"_blank\">Ikaros Developer</a>. \n        Built with <a href=\"https://docusaurus.io/\" target=\"_blank\">Docusaurus</a>.<br />\n        China ICP Number: <a href=\"http://beian.miit.gov.cn/publish/query/indexFirst.action\" target=\"_blank\">赣ICP备19013362号-4</a>",
     "description": "The footer copyright"
+  },
+  "link.item.label.Ikaros Status": {
+    "message": "Ikaros Status",
+    "description": "The label of footer link with label=Ikaros Status linking to https://status.ikaros.run/status/ikaros"
   }
 }

@@ -1,0 +1,64 @@
+{
+  "docsSidebar": [
+    "intro",
+    {
+      "type": "category",
+      "label": "getting-started",
+      "link": {
+        "type": "generated-index"
+      },
+      "collapsed": false,
+      "items": [
+        "getting-started/prepare",
+        {
+          "type": "category",
+          "label": "getting-started-install",
+          "link": {
+            "type": "generated-index"
+          },
+          "items": [
+            "getting-started/install/docker-compose",
+            "getting-started/install/docker",
+            "getting-started/install/1panel",
+            "getting-started/install/fast-jar",
+            "getting-started/install/flutter-app"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "user-guide",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "user-guide/common",
+        "user-guide/attachments",
+        "user-guide/subjects",
+        "user-guide/plugins",
+        "user-guide/settings",
+        "user-guide/users",
+        "user-guide/collections",
+        "user-guide/faq"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "plugins",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "plugins/common",
+        "plugins/plugin-bgmtv",
+        "plugins/plugin-local-files-import",
+        "plugins/plugin-jellyfin",
+        "plugins/plugin-mikan",
+        "plugins/plugin-baidupan",
+        "plugins/plugin-alist"
+      ]
+    },
+    "about"
+  ]
+}

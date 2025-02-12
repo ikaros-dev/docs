@@ -115,10 +115,6 @@ const config = {
                 href: "https://ikaros.run",
               },
               {
-                label: "WeChat Channel",
-                href: "https://ikaros.run/wechat.png",
-              },
-              {
                 label: "Ikaros Status",
                 href: "https://status.ikaros.run/status/ikaros",
               },
@@ -143,10 +139,6 @@ const config = {
               {
                 label: "Telegram Group",
                 href: "https://t.me/run_ikaros",
-              },
-              {
-                label: "QQ Chat Group",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=78drHnTdkaGQHwAkt1eEU3JpxBfUeuPx&authKey=dvZ0CdZjiX36wKiDlDF0qKVcEDe7SNXfL%2BllKTIf%2FgiXNHwlWqTmlXTs%2BtLnB1un&noverify=0&group_code=413528874",
               },
             ],
           },

@@ -116,7 +116,7 @@ const config = {
               },
               {
                 label: "Ikaros Status",
-                href: "https://status.ikaros.run/status/ikaros",
+                href: "https://stats.uptimerobot.com/Lnv91d0Xvd",
               },
             ],
           },

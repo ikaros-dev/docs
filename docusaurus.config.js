@@ -111,8 +111,8 @@ const config = {
             title: "About",
             items: [
               {
-                label: "Offical",
-                href: "https://ikaros.run",
+                label: "GitHub Issues",
+                href: "https://github.com/ikaros-dev/ikaros/issues",
               },
               {
                 label: "Ikaros Status",
@@ -123,11 +123,6 @@ const config = {
           {
             title: "Community",
             items: [
-             
-              {
-                label: "GitHub Issues",
-                href: "https://github.com/ikaros-dev/ikaros/issues",
-              },
               {
                 label: "Telegram Channel",
                 href: "https://t.me/run_ikaros_channel",

@@ -118,10 +118,6 @@ const config = {
                 label: "Ikaros Status",
                 href: "https://status.ikaros.run/status/ikaros",
               },
-              {
-                label: "Ikaros Analytics",
-                href: "https://analytics.ikaros.run/share/s5uHahQNqVtfKoPq/docs.ikaros.run",
-              },
             ],
           },
           {

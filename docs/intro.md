@@ -57,12 +57,6 @@ docker run \
 
 以上仅作为体验使用，详细部署文档请查阅：[使用 Docker Compose 部署](./getting-started/install/docker-compose.md)
 
-# 在线体验Demo
-
-<https://demo.ikaros.run/console/>
-
-用户名: demo
-密码: demo
 
 ## 插件
 

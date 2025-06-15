@@ -144,11 +144,11 @@ const config = {
       },
     }),
     scripts: [
-      {
-        src: "https://analytics.ikaros.run/script.js",
-        async: true,
-        "data-website-id": "32a4e564-ed51-4818-937e-326248ce4691",
-      }
+      // {
+      //   src: "https://analytics.ikaros.run/script.js",
+      //   async: true,
+      //   "data-website-id": "32a4e564-ed51-4818-937e-326248ce4691",
+      // }
     ]
 };
 

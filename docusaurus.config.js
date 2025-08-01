@@ -135,7 +135,8 @@ const config = {
           },
         ],
         copyright: `Copyright ©2022~${new Date().getFullYear()} <a href="https://github.com/ikaros-dev" target="_blank">Ikaros Developer</a>  
-        Built with <a href="https://docusaurus.io/" target="_blank">Docusaurus</a>.`
+        Built with <a href="https://docusaurus.io/" target="_blank">Docusaurus</a>.<br />
+        China ICP Number: <a href="http://beian.miit.gov.cn/publish/query/indexFirst.action" target="_blank">赣ICP备2025068655号-1</a>`
       },
       prism: {
         theme: lightCodeTheme,

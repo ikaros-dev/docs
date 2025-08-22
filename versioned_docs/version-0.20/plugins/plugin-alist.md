@@ -9,7 +9,7 @@ description: AList插件说明
 
 官网：<https://alist.nn.ci>
 
-GitHub: <https://github.com/alist-org/alist>
+GitHub: <https://github.com/ikaros-dev/plugin-alist>
 
 # 插件介绍
 

@@ -149,6 +149,11 @@ const config = {
       //   async: true,
       //   "data-website-id": "32a4e564-ed51-4818-937e-326248ce4691",
       // }
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7848114151289724",
+        async: true,
+        crossorigin: "anonymous"
+      }
     ]
 };
 

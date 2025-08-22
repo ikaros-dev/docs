@@ -148,7 +148,7 @@ const config = {
         src: "https://analytics.ikaros.run/script.js",
         async: true,
         "data-website-id": "80751cab-ce3c-4137-9b61-406f7938dec2",
-      }
+      },
       {
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7848114151289724",
         async: true,

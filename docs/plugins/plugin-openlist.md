@@ -15,6 +15,8 @@ GitHub: <https://github.com/OpenListTeam/OpenList>
 
 导入转化OpenList的文件直链成ikaros的附件。
 
+GitHub: <https://github.com/ikaros-dev/plugin-openlist>
+
 # 操作指南
 
 1. 去GitHub仓库release的asserts下下载openlist插件的jar包，安装并启动。启动后会发现左边菜单栏多了个OpenList页面。

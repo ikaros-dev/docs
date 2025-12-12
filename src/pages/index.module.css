@@ -21,3 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+
+body {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* 兼容旧版 Safari */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(graysale=1); /* 兼容旧版 IE */
+}

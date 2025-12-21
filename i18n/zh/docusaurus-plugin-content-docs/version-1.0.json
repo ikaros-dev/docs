@@ -1,7 +1,7 @@
 {
   "version.label": {
-    "message": "0.21",
-    "description": "The label for version 0.21"
+    "message": "1.0",
+    "description": "The label for version 1.0"
   },
   "sidebar.docsSidebar.category.getting-started": {
     "message": "入门",

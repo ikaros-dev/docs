@@ -25,7 +25,6 @@ import DockerArgs from "./slots/docker-args.md"
 - [ikarosrun/ikaros](https://hub.docker.com/r/ikarosrun/ikaros)
 
 :::info 注意
-
 - `ikarosrun/ikaros:latest`：表示最新的可用镜像，每次发布时都会根据GitHub的标签构建一个新的镜像
 - `ikarosrun/ikaros:dev`：表示开发中的镜像，不推荐使用，每次Pull Request合并到主分支都会构建并覆盖该镜像。。
 

@@ -37,7 +37,7 @@ import DockerArgs from "./slots/docker-args.md"
 
 国内网络：
 ```
-wget -P /opt/1panel/resource/apps/local https://ghp.ikaros.run/https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
+wget -P /opt/1panel/resource/apps/local https://ghfast.top/https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
 
 # 检查 unzip 是否安装
 if ! command -v unzip &> /dev/null
@@ -74,7 +74,7 @@ rm -rf /opt/1panel/resource/apps/local/localApps.zip
 
 国外网络：
 ```
-wget -P /opt/1panel/resource/apps/local https://ghfast.top/https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
+wget -P /opt/1panel/resource/apps/local https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
 
 # 检查 unzip 是否安装
 if ! command -v unzip &> /dev/null

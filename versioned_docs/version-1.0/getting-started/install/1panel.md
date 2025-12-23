@@ -20,9 +20,7 @@ import DockerArgs from "./slots/docker-args.md"
 ![](https://resource.fit2cloud.com/1panel/img/overview.png)
 
 
-## 1panel三方应用商店配置
-
-商店仓库：<https://github.com/okxlin/appstore>
+## 应用商店添加ikaros
 
 :::tip
 如果已经配置过则无需配置；

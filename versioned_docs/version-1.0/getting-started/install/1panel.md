@@ -25,19 +25,18 @@ import DockerArgs from "./slots/docker-args.md"
 商店仓库：<https://github.com/okxlin/appstore>
 
 :::tip
-因为官方应用商店仓库无法主动提交，只能提交给三方应用商店；
 如果已经配置过则无需配置；
 配置前，请先安装好1panel，参考：<https://1panel.cn/docs/>
 :::
 
 进入1panel面板，按照下图步骤创建计划任务：
-![](/img/getting-started-install-1panel/Snipaste_2024-10-10_17-15-03.png)
+![](/img/getting-started-install-1panel/Snipaste_2025-12-23_07-59-06.png)
 
 脚本内容：
 
 国内网络：
 ```
-wget -P /opt/1panel/resource/apps/local https://ghfast.top/https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
+wget -P /opt/1panel/resource/apps/local https://ghfast.top/https://github.com/ikaros-dev/1panel_app/archive/refs/heads/main.zip
 
 # 检查 unzip 是否安装
 if ! command -v unzip &> /dev/null
@@ -63,18 +62,18 @@ else
     echo "unzip 已安装."
 fi
 
-unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/localApps.zip
+unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/main.zip
 
-cp -rf /opt/1panel/resource/apps/local/appstore-localApps/apps/* /opt/1panel/resource/apps/local/
+rm -rf /opt/1panel/resource/apps/local/ikaros
 
-rm -rf /opt/1panel/resource/apps/local/appstore-localApps
+mv /opt/1panel/resource/apps/local/1panel_app-main /opt/1panel/resource/apps/local/ikaros
 
-rm -rf /opt/1panel/resource/apps/local/localApps.zip
+rm -rf /opt/1panel/resource/apps/local/main.zip
 ```
 
 国外网络：
 ```
-wget -P /opt/1panel/resource/apps/local https://github.com/okxlin/appstore/archive/refs/heads/localApps.zip
+wget -P /opt/1panel/resource/apps/local https://github.com/ikaros-dev/1panel_app/archive/refs/heads/main.zip
 
 # 检查 unzip 是否安装
 if ! command -v unzip &> /dev/null
@@ -100,20 +99,18 @@ else
     echo "unzip 已安装."
 fi
 
-unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/localApps.zip
+unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/main.zip
 
-cp -rf /opt/1panel/resource/apps/local/appstore-localApps/apps/* /opt/1panel/resource/apps/local/
+rm -rf /opt/1panel/resource/apps/local/ikaros
 
-rm -rf /opt/1panel/resource/apps/local/appstore-localApps
+mv /opt/1panel/resource/apps/local/1panel_app-main /opt/1panel/resource/apps/local/ikaros
 
-rm -rf /opt/1panel/resource/apps/local/localApps.zip
+rm -rf /opt/1panel/resource/apps/local/main.zip
 ```
 
-任务名称：自己随便取
-执行周期：不理解则按图中配置即可，图中的意思是每天凌晨2点30分钟执行一次
-保留份数：不理解则按图中配置即可
+任务名称：自己随便取, 建议取 应用商店添加ikaros
 
-配置好后，手动点击执行一次，然后去`应用商店`页面点击`更新应用列表`按钮，然后a按`F5`键刷新网页即可。
+配置好后，手动点击执行一次，等脚本执行完，然后去`应用商店`页面点击`更新应用列表`按钮，然后搜索框搜索`ikaros`，如果默认没勾选则需要手动勾选`本地应用`。
 
 ## 安装ikaros
 

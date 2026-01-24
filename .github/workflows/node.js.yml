@@ -47,14 +47,3 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: build
-
-#      - name: Deploy build static files
-#        uses: easingthemes/ssh-deploy@main
-#        env:
-#          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-#          ARGS: "-avzr --delete"
-#          SOURCE: "build/"
-#          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-#          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
-#          REMOTE_USER: ${{ secrets.SERVER_USER }}
-#          TARGET: "/opt/1panel/apps/openresty/openresty/www/sites/docs.ikaros.run/index"

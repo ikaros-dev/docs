@@ -74,6 +74,8 @@ description: 附件驱动管理相关功能说明
 
 同理，该目录下的子目录也是同样的主动刷新逻辑。
 
+需要注意的是，如果子目录和子文件数量多，则需要等待刷新加载的时间也越长。
+
 ![Ikaros Console Plugin Config](/img/user-guide-attachments-drivers/Snipaste_2026-05-16_17-08-14.png)
 
 进入对应的目录，点刷新，然后再进子目录，点刷新，直到进入目标目录。
@@ -83,7 +85,6 @@ description: 附件驱动管理相关功能说明
 当你确定你的视频文件可以正常播放后，就可以愉快地在剧集绑定这个视频文件了。
 
 附件详情页预览：
-
 
 ![Ikaros Console Plugin Config](/img/user-guide-attachments-drivers/Snipaste_2026-05-16_17-09-17.png)
 

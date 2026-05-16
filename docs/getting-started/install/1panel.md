@@ -10,7 +10,7 @@ import DockerArgs from "./slots/docker-args.md"
 :::
 
 
-## 1panel
+# 1Panel
 
 > 1Panel 是新一代的 Linux 服务器运维管理面板
 
@@ -19,6 +19,54 @@ import DockerArgs from "./slots/docker-args.md"
 
 ![](https://resource.fit2cloud.com/1panel/img/overview.png)
 
+# 方式一：容器编排安装Ikaros（推荐）
+
+## 创建目录
+在你的宿主机器上，按自己的习惯找一个自己常用并且能记住的应用目录，比如`/opt/ikaros`
+
+创建这个目录，并在这个目录下创建`docker-compose.yaml`文件和`.env`文件
+
+`docker-compose.yaml`的内容参考: [使用 Docker Compose 部署](./docker-compose)
+
+## 运行编排
+参考[1panel官方的容器编排文档](https://1panel.cn/docs/v2/user_manual/containers/compose/)，在1panel web端，使用上面地址的compose文件，创建编排。
+
+路径是：容器 => 编排 => 创建 => 路径选择 => 输入`docker-compose.yaml`文件路径 => 保存创建 => 查看编排日志等待容器跑起来。
+
+## 使用面板PG数据库
+
+当然如果你想用1panel的面板托管PG数据库，只需要去掉compose文件里的数据库那块，然后加上网络配置，修改数据库连接配置。
+
+compose文件需要修改网络配置：
+```shell
+networks:
+    # ikaros_networks:
+    #  driver: bridge
+    1panel-network:
+        external: true
+service:
+    ikaros:
+        ...
+        ...
+        networks:
+            # ikaros_networks:
+            - 1panel-network
+        ...
+        ...
+```
+别忘记修改`command`里的数据库配置，一般是`spring.r2dbc`和`spring.flyway`开头。
+
+
+## 相比方式二更推荐的原因
+
+就我个人使用下来，应用商店的应用其实并不好维护，从容器编排创建的维护起来更方便。
+
+比如，修改环境变量，只能从应用商店那点五六下才能点到compose文件，直接从编排这里改或者改compose文件都容易出问题。
+
+还是直接用compose文件创建容器编排比较合适，和在命令行执行`docker-compose up -d`命令效果差不多，还能在web端查看日志修改环境变量，不用ssh登录Shell。
+
+
+# 方式二：应用商店安装Ikaros
 
 ## 应用商店添加ikaros
 

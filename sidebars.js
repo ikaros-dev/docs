@@ -56,6 +56,7 @@ const sidebars = {
         "user-guide/attachments",
         "user-guide/attachment_drivers",
         "user-guide/subjects",
+        "user-guide/subject-episodes-attachments",
         "user-guide/plugins",
         "user-guide/settings",
         "user-guide/users",

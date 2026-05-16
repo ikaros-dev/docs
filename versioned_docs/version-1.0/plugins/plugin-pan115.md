@@ -64,7 +64,7 @@ GitHub: <https://github.com/ikaros-dev/plugin-pan115>
 
 建议你把两个令牌复制自己保存好。
 
-令牌拿到了，现在会到ikaros web console的`附件驱动新建页`，填入访问令牌和刷新令牌，
+令牌拿到了，现在回到ikaros web console的`附件驱动新建页`，填入访问令牌和刷新令牌，
 
 最后点击卡片左下方的`新建`按钮，等待一会儿，页面会自动跳转到`附件驱动列表页`
 

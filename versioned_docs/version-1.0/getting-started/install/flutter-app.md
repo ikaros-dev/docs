@@ -23,6 +23,8 @@ GitHub: <https://github.com/ikaros-dev/app>
 进 [ikaros app github releases](https://github.com/ikaros-dev/app/releases) => 点击最新版本 => Assert
 => 安装包(安卓是apk，IOS是ipa后缀)。
 
+![](https://imgbed.ikaros.run/file/posts/1778955270516_20260517021428439.png)
+
 ## 移动端截图
 
 ### 条目收藏页和条目列表页

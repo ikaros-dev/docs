@@ -25,6 +25,7 @@ import DockerArgs from "./slots/docker-args.md"
 - [ikarosrun/ikaros](https://hub.docker.com/r/ikarosrun/ikaros)
 
 :::info 注意
+
 - `ikarosrun/ikaros:latest`：表示最新的可用镜像，每次发布时都会根据GitHub的标签构建一个新的镜像
 - `ikarosrun/ikaros:dev`：表示开发中的镜像，不推荐使用，每次Pull Request合并到主分支都会构建并覆盖该镜像。。
 
@@ -37,13 +38,13 @@ import DockerArgs from "./slots/docker-args.md"
   mkdir ~/ikaros && cd ~/ikaros
   ```
 
-  :::info
-  注意：后续操作中，Ikaros 产生的所有数据都会保存在这个目录，请妥善保存。
-  :::
+:::info
+注意：后续操作中，Ikaros 产生的所有数据都会保存在这个目录，请妥善保存。
+:::
 
 2. 创建 `docker-compose.yaml`
 
-  此文档提供两种场景的 Docker Compose 配置文件，请根据你的需要**选择一种**。
+此文档提供两种场景的 Docker Compose 配置文件，请根据你的需要**选择一种**。
 
     1. 创建 Ikaros + PostgreSQL 的实例：
 
@@ -101,13 +102,13 @@ import DockerArgs from "./slots/docker-args.md"
 
         # ikaros database
         ikaros_database:
-            image: postgres:latest
+            image: postgres:18.3-alpine
             container_name: ikaros_database
             restart: on-failure:3
             networks:
               ikaros_networks:
             volumes:
-              - ./database:/var/lib/postgresql/data
+              - ./database:/var/lib/postgresql
             healthcheck:
               test: [ "CMD", "pg_isready" ]
               interval: 10s
@@ -169,7 +170,7 @@ import DockerArgs from "./slots/docker-args.md"
         driver: bridge
     ```
 
-  参数详解：
+参数详解：
 
   <DockerArgs />
 
@@ -179,7 +180,7 @@ import DockerArgs from "./slots/docker-args.md"
   docker-compose up -d
   ```
 
-  实时查看日志：
+实时查看日志：
 
   ```bash
   docker-compose logs -f ikaros
@@ -205,11 +206,11 @@ import DockerArgs from "./slots/docker-args.md"
   cp -r ~/ikaros ~/ikaros.archive
   ```
 
-  > 需要注意的是，`ikaros.archive` 文件名不一定要根据此文档命名，这里仅仅是个示例。
+> 需要注意的是，`ikaros.archive` 文件名不一定要根据此文档命名，这里仅仅是个示例。
 
 3. 更新 Ikaros 服务
 
-  修改 `docker-compose.yaml` 中配置的镜像版本。
+修改 `docker-compose.yaml` 中配置的镜像版本。
 
   ```yaml {3}
   services:

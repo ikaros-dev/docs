@@ -102,13 +102,13 @@ import DockerArgs from "./slots/docker-args.md"
 
         # ikaros database
         ikaros_database:
-            image: postgres:latest
+            image: postgres:18.3-alpine
             container_name: ikaros_database
             restart: on-failure:3
             networks:
               ikaros_networks:
             volumes:
-              - ./database:/var/lib/postgresql/data
+              - ./database:/var/lib/postgresql
             healthcheck:
               test: [ "CMD", "pg_isready" ]
               interval: 10s

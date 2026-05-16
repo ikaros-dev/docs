@@ -20,7 +20,7 @@ description: 描述条目剧集如何绑定附件
 
 ## 添加条目
 
-条目新建你当然可以手动一个个加：[手动新增条目](./subjects.md#新增条目页)
+条目新建你当然可以手动一个个加：[手动新增条目](./subjects#新增条目页)
 
 但是更推荐安装 [番组计划插件](../plugins/plugin-bgmtv) 进行快捷添加条目：[番组计划插件#快速新增条目](../plugins/plugin-bgmtv#快速新增条目)
 
@@ -44,3 +44,4 @@ description: 描述条目剧集如何绑定附件
 
 条目的剧集和附件资源绑定后就可以用app愉快的补番了。
 
+![Ikaros Console User Guide](/img/user-guide-subject-episodes-attachments/Snipaste_2026-05-16_18-30-55.png)

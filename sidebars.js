@@ -73,7 +73,6 @@ const sidebars = {
         "plugins/common",
         "plugins/plugin-bgmtv",
         "plugins/plugin-pan115",
-        "plugins/plugin-local-files-import",
         "plugins/plugin-jellyfin",
         "plugins/plugin-mikan",
         "plugins/plugin-openlist"

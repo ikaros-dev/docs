@@ -25,6 +25,7 @@ import DockerArgs from "./slots/docker-args.md"
 在你的宿主机器上，按自己的习惯找一个自己常用并且能记住的应用目录，比如`/opt/ikaros`
 
 创建这个目录，并在这个目录下创建`docker-compose.yaml`文件和`.env`文件
+![](https://imgbed.ikaros.run/file/posts/1778948563189_20260517002236151.png)
 
 `docker-compose.yaml`的内容参考: [使用 Docker Compose 部署](./docker-compose)
 

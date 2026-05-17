@@ -16,6 +16,11 @@ ACGMN全拼是：Anime(动画) + Comic(漫画) + Game(游戏) + Music(音乐) + 
 
 当然，目前基本就专注在Anime这块，基本能很好得解决随时随地追老番的acg爱好者痛点。
 
+# 辅助视频
+
+- 哔哩哔哩: <https://www.bilibili.com/video/BV1hQLE65Er4/>
+- YouTube: <https://youtu.be/NfIzggn-aog>
+
 # 准备宿主机
 你可以选择安装到NAS上，我这里是用PVE虚拟化了一台Ubuntu, 专门用于文章演示。
 

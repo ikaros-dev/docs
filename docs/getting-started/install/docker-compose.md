@@ -46,94 +46,19 @@ import DockerArgs from "./slots/docker-args.md"
 
   此文档提供两种场景的 Docker Compose 配置文件，请根据你的需要**选择一种**。
 
-    1. 创建 Ikaros + PostgreSQL 的实例：
+  1. 创建 Ikaros + PostgreSQL 的实例：
 
-    ```yaml {24-34,51} title="~/ikaros/docker-compose.yaml"
-    version: "3"
-    services:
-        # ikaros
-        ikaros:
-            image: ikarosrun/ikaros:latest
-            container_name: ikaros
-            restart: on-failure:3
-            depends_on:
-              ikaros_database:
-                condition: service_healthy
-            networks:
-              ikaros_networks:
-            volumes:
-              - ./:/root/.ikaros
-            ports:
-              - "9999:9999"
-            healthcheck:
-              test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health"]
-              interval: 30s
-              timeout: 5s
-              retries: 5
-              start_period: 30s
-            environment:
-              - LANG=C.UTF-8
-              - LANGUAGE=C:zh
-              - LC_ALL=C.UTF-8
-              - TZ=Asia/Shanghai
-            command:
-              - --logging.charset.console=UTF-8
-              - --logging.charset.file=UTF-8
-              # log level for package, such as INFO or DEBUG
-              - --logging.level.run.ikaros.server=INFO
-              - --logging.level.run.ikaros.plugin=INFO
-              - --logging.level.run.ikaros.jellyfin=INFO
-              - --sun.jnu.encoding=UTF-8
-              - --spring.r2dbc.url=r2dbc:pool:postgresql://ikaros_database/ikaros
-              - --spring.r2dbc.username=ikaros
-              # PostgreSQL 的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致。
-              - --spring.r2dbc.password=openpostgresql
-              # Flayway
-              - --spring.flyway.url=jdbc:postgresql://ikaros_database/ikaros
-              - --spring.flyway.locations=classpath:db/postgresql/migration
-              - --spring.flyway.user=ikaros
-              - --spring.flyway.password=openpostgresql
-              # ikaros 外部访问地址 需要根据自己的情况进行修改 影响的功能包括不限于API文档等
-              - --ikaros.external-url=http://localhost:9999
-              # 初始化的超级管理员用户名
-              - --ikaros.security.initializer.master-username=tomoki
-              # 初始化的超级管理员密码
-              - --ikaros.security.initializer.master-password=tomoki
-
-        # ikaros database
-        ikaros_database:
-            image: postgres:18.3-alpine
-            container_name: ikaros_database
-            restart: on-failure:3
-            networks:
-              ikaros_networks:
-            volumes:
-              - ./database:/var/lib/postgresql
-            healthcheck:
-              test: [ "CMD", "pg_isready" ]
-              interval: 10s
-              timeout: 5s
-              retries: 5
-            environment:
-              - POSTGRES_DB=ikaros
-              - POSTGRES_USER=ikaros
-              - POSTGRES_PASSWORD=openpostgresql
-
-    networks:
-      ikaros_networks:
-        driver: bridge
-    ```
-
-    2. 仅创建 Ikaros 实例（使用默认的 H2 数据库，**不推荐用于生产环境，建议体验和测试的时候使用**）：
-
-    ```yaml {19-24} title="~/ikaros/docker-compose.yaml"
-    version: "3"
-    services:
-       # ikaros
+  ```yaml {24-34,51} title="~/ikaros/docker-compose.yaml"
+  version: "3"
+  services:
+      # ikaros
       ikaros:
           image: ikarosrun/ikaros:latest
           container_name: ikaros
           restart: on-failure:3
+          depends_on:
+            ikaros_database:
+              condition: service_healthy
           networks:
             ikaros_networks:
           volumes:
@@ -154,10 +79,20 @@ import DockerArgs from "./slots/docker-args.md"
           command:
             - --logging.charset.console=UTF-8
             - --logging.charset.file=UTF-8
+            # log level for package, such as INFO or DEBUG
             - --logging.level.run.ikaros.server=INFO
             - --logging.level.run.ikaros.plugin=INFO
             - --logging.level.run.ikaros.jellyfin=INFO
             - --sun.jnu.encoding=UTF-8
+            - --spring.r2dbc.url=r2dbc:pool:postgresql://ikaros_database/ikaros
+            - --spring.r2dbc.username=ikaros
+            # PostgreSQL 的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致。
+            - --spring.r2dbc.password=openpostgresql
+            # Flayway
+            - --spring.flyway.url=jdbc:postgresql://ikaros_database/ikaros
+            - --spring.flyway.locations=classpath:db/postgresql/migration
+            - --spring.flyway.user=ikaros
+            - --spring.flyway.password=openpostgresql
             # ikaros 外部访问地址 需要根据自己的情况进行修改 影响的功能包括不限于API文档等
             - --ikaros.external-url=http://localhost:9999
             # 初始化的超级管理员用户名
@@ -165,10 +100,75 @@ import DockerArgs from "./slots/docker-args.md"
             # 初始化的超级管理员密码
             - --ikaros.security.initializer.master-password=tomoki
 
-    networks:
-      ikaros_networks:
-        driver: bridge
-    ```
+      # ikaros database
+      ikaros_database:
+          image: postgres:18.3-alpine
+          container_name: ikaros_database
+          restart: on-failure:3
+          networks:
+            ikaros_networks:
+          volumes:
+            - ./database:/var/lib/postgresql
+          healthcheck:
+            test: [ "CMD", "pg_isready" ]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+          environment:
+            - POSTGRES_DB=ikaros
+            - POSTGRES_USER=ikaros
+            - POSTGRES_PASSWORD=openpostgresql
+
+  networks:
+    ikaros_networks:
+      driver: bridge
+  ```
+
+  2. 仅创建 Ikaros 实例（使用默认的 H2 数据库，**不推荐用于生产环境，建议体验和测试的时候使用**）：
+
+  ```yaml {19-24} title="~/ikaros/docker-compose.yaml"
+  version: "3"
+  services:
+     # ikaros
+    ikaros:
+        image: ikarosrun/ikaros:latest
+        container_name: ikaros
+        restart: on-failure:3
+        networks:
+          ikaros_networks:
+        volumes:
+          - ./:/root/.ikaros
+        ports:
+          - "9999:9999"
+        healthcheck:
+          test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health"]
+          interval: 30s
+          timeout: 5s
+          retries: 5
+          start_period: 30s
+        environment:
+          - LANG=C.UTF-8
+          - LANGUAGE=C:zh
+          - LC_ALL=C.UTF-8
+          - TZ=Asia/Shanghai
+        command:
+          - --logging.charset.console=UTF-8
+          - --logging.charset.file=UTF-8
+          - --logging.level.run.ikaros.server=INFO
+          - --logging.level.run.ikaros.plugin=INFO
+          - --logging.level.run.ikaros.jellyfin=INFO
+          - --sun.jnu.encoding=UTF-8
+          # ikaros 外部访问地址 需要根据自己的情况进行修改 影响的功能包括不限于API文档等
+          - --ikaros.external-url=http://localhost:9999
+          # 初始化的超级管理员用户名
+          - --ikaros.security.initializer.master-username=tomoki
+          # 初始化的超级管理员密码
+          - --ikaros.security.initializer.master-password=tomoki
+
+  networks:
+    ikaros_networks:
+      driver: bridge
+  ```
 
   参数详解：
 

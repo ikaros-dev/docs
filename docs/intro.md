@@ -38,24 +38,13 @@ slug: /
 
 ---
 
-## 快速开始
-
-```bash
-docker run \
-  -it -d \
-  --name ikaros \
-  -p 9999:9999 \
-  -v ~/.ikaros:/root/.ikaros \
-  ikarosrun/ikaros:latest \
-  --ikaros.security.initializer.master-username=tomoki \
-  --ikaros.security.initializer.master-password=tomoki
-```
+## 安装部署
 
 控制台的路径是 `/console` 。
 默认端口是`9999`，默认用户名密码是通过上述两个参数控制的，
 如没有用这两个参数启动，则默认的用户名是 `tomoki`，密码在打印在日志里(只有首次运行会打印密码)。
 
-以上仅作为体验使用，详细部署文档请查阅：[使用 Docker Compose 部署](./getting-started/install/docker-compose.md)
+部署文档请查阅：[使用 Docker Compose 部署](./getting-started/install/docker-compose.md)
 
 
 ## 插件

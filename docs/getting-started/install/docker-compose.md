@@ -44,9 +44,7 @@ import DockerArgs from "./slots/docker-args.md"
 
 2. 创建 `docker-compose.yaml`
 
-  此文档提供两种场景的 Docker Compose 配置文件，请根据你的需要**选择一种**。
-
-  1. 创建 Ikaros + PostgreSQL 的实例：
+  创建 Ikaros + PostgreSQL 的实例：
 
   ```yaml {24-34,51} title="~/ikaros/docker-compose.yaml"
   version: "3"
@@ -124,51 +122,6 @@ import DockerArgs from "./slots/docker-args.md"
       driver: bridge
   ```
 
-  2. 仅创建 Ikaros 实例（使用默认的 H2 数据库，**不推荐用于生产环境，建议体验和测试的时候使用**）：
-
-  ```yaml {19-24} title="~/ikaros/docker-compose.yaml"
-  version: "3"
-  services:
-     # ikaros
-    ikaros:
-        image: ikarosrun/ikaros:latest
-        container_name: ikaros
-        restart: on-failure:3
-        networks:
-          ikaros_networks:
-        volumes:
-          - ./:/root/.ikaros
-        ports:
-          - "9999:9999"
-        healthcheck:
-          test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health"]
-          interval: 30s
-          timeout: 5s
-          retries: 5
-          start_period: 30s
-        environment:
-          - LANG=C.UTF-8
-          - LANGUAGE=C:zh
-          - LC_ALL=C.UTF-8
-          - TZ=Asia/Shanghai
-        command:
-          - --logging.charset.console=UTF-8
-          - --logging.charset.file=UTF-8
-          - --logging.level.run.ikaros.server=INFO
-          - --logging.level.run.ikaros.plugin=INFO
-          - --logging.level.run.ikaros.jellyfin=INFO
-          - --sun.jnu.encoding=UTF-8
-          # ikaros 外部访问地址 需要根据自己的情况进行修改 影响的功能包括不限于API文档等
-          - --ikaros.external-url=http://localhost:9999
-          # 初始化的超级管理员用户名
-          - --ikaros.security.initializer.master-username=tomoki
-          # 初始化的超级管理员密码
-          - --ikaros.security.initializer.master-password=tomoki
-
-  networks:
-    ikaros_networks:
-      driver: bridge
-  ```
 
   参数详解：
 

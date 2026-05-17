@@ -29,7 +29,7 @@ GitHub: <https://github.com/ikaros-dev/plugin-pan115>
 
 ## 操作指南
 
-去GitHub仓库release的asserts下下载openlist插件的jar包，进web console的`插件页`安装并启动
+去`GitHub`仓库`release`的`asserts`下下载插件的jar包，进web console的`插件页`安装并启动
 
 ![Ikaros Console Plugin Config](/img/plugins-plugin-pan115/Snipaste_2026-05-16_15-12-22.png)
 
